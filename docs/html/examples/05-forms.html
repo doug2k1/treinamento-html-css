@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulários</title>
+</head>
+<body>
+    <form action="submit.php" method="post">
+        <label>Campo de texto simples</label>
+        <input type="text" name="userName">
+
+        <br><br>
+
+        <label>Campo de texto de múltiplas linhas</label>
+        <textarea name="userBio"></textarea>
+
+        <br><br>
+
+        <label>Checkbox <input type="checkbox" name="agreeTerms"></label>
+
+        <br><br>
+
+        <label>Radio opção 1 <input type="radio" name="gender" value="m"></label>
+        <label>Radio opção 2 <input type="radio" name="gender" value="f"></label>
+
+        <br><br>
+
+        <label>Dropdown</label>
+        <select name="city">
+            <option value="1">Belo Horizonte</option>
+            <option value="2">Campinas</option>
+            <option value="3">São Paulo</option>
+        </select>
+
+        <br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

@@ -1,0 +1,9 @@
+site_name: Treinamento HTML & CSS
+theme: readthedocs
+pages:
+- Home: index.md
+- HTML: html/index.md
+- HTML5: html5/index.md
+- CSS: css/index.md
+- CSS3: css3/index.md
+- Design Responsivo: responsive/index.md
