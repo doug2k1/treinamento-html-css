@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Box Sizing</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .example {
+            border: 5px solid blue;
+            height: 100px;
+            padding: 20px;
+            width: 300px;
+        }
+        .new-example {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <p>Box Model padrão (box-sizing: content-box)</p>
+    <div class="example">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    </div>
+
+    <p>Box Model com box-sizing: border-box</p>
+    <div class="example new-example">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    </div>
+</body>
+</html>

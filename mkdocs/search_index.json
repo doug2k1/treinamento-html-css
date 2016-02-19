@@ -1,0 +1,294 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Treinamento HTML \n CSS\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#treinamento-html-css", 
+            "text": "For full documentation visit  mkdocs.org .", 
+            "title": "Treinamento HTML &amp; CSS"
+        }, 
+        {
+            "location": "/#commands", 
+            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.", 
+            "title": "Commands"
+        }, 
+        {
+            "location": "/#project-layout", 
+            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
+            "title": "Project layout"
+        }, 
+        {
+            "location": "/html/", 
+            "text": "HTML\n\n\nHTML \u00e9 uma linguagem de marca\u00e7\u00e3o, usada para estruturar o conte\u00fado de uma p\u00e1gina.\n\n\nSintaxe\n\n\n!-- tag com conte\u00fado --\n\n\ntag atributo=\nvalor\nconte\u00fado\n/tag\n\n\n\n!-- tag sem conte\u00fado --\n\n\ntag\n\n\n\n\n\nDOCTYPE e html\n\n\nO \nDOCTYPE\n diz para o navegador que o documento \u00e9 um HTML. Vem antes de qualquer outra tag no documento.\nA tag \nhtml\n engloba todo o documento.\n\n\n!DOCTYPE html\n\n\nhtml\n\n\n\n/html\n\n\n\n\n\nTags head e body\n\n\nNo \nhead\n ficam metadados da p\u00e1gina, informa\u00e7\u00f5es n\u00e3o vis\u00edveis ao usu\u00e1rio (exceto o t\u00edtulo).\nNo \nbody\n fica o conte\u00fado que ser\u00e1 apresentado ao usu\u00e1rio.\n\n\n!DOCTYPE html\n\n\nhtml\n\n    \nhead\n\n        \nmeta charset=\nUTF-8\n\n        \ntitle\nT\u00edtulo da p\u00e1gina\n/title\n\n    \n/head\n\n    \nbody\n\n        \np\nUm par\u00e1grafo de texto.\n/p\n\n    \n/body\n\n\n/html\n\n\n\n\n\nTextos\n\n\nCabe\u00e7alhos e par\u00e1grafos.\n\n\nh1\nCabe\u00e7alho de n\u00edvel 1 - O principal do documento\n/h1\n\n\nh2\nCabe\u00e7alho n\u00edvel 2\n/h2\n\n\nh3\n...\n/h3\n\n...\n\nh6\n...\n/h6\n\n\n\np\nPar\u00e1grafo de texto\n/p\n\n\np\nPar\u00e1grafo com quebra de linha \nbr\nfor\u00e7ada.\n/p\n\n\n\n\n\nExemplo: \n01-text.html\n\n\nLinks\n\n\np\nProcure no \na href=\nhttp://www.google.com\nGoogle\n/a\np\n\n\n\np\nLink para \na href=\n/pagina/interna.html\np\u00e1gina interna\n/a\n\n\n\n\n\nImagens\n\n\nimg src=\nlogo.jpg\n alt=\nLogo da empresa\n\n\n\np\nImagens tamb\u00e9m podem ser links: \na href=\n/pagina/interna.html\nimg src=\nicone.jpg\n alt=\n\u00cdcone\n/a\n/p\n\n\n\n\n\nExemplo: \n02-links-images.html\n\n\nListas\n\n\nLista n\u00e3o ordenada:\n\n\nul\n\n    \nli\nHTML\n/li\n\n    \nli\nCSS\n        \nul\n\n            \nli\nSASS\n/li\n\n            \nli\nLESS\n/li\n\n        \n/ul\n\n    \n/li\n\n    \nli\nJavaScript\n/li\n\n\n/ul\n\n\n\n\n\nLista ordenada:\n\n\nol\n\n    \nli\nHTML\n/li\n\n    \nli\nCSS\n        \nol\n\n            \nli\nSASS\n/li\n\n            \nli\nLESS\n/li\n\n        \n/ol\n\n    \n/li\n\n    \nli\nJavaScript\n/li\n\n\n/ol\n\n\n\n\n\nExemplo: \n03-lists.html\n\n\nTabelas\n\n\ntable\n\n    \nthead\n\n        \ntr\n\n            \nth\nID\n/th\n\n            \nth\nDescri\u00e7\u00e3o\n/th\n\n            \nth\nPre\u00e7o\n/th\n\n        \n/tr\n\n    \n/tead\n\n    \ntbody\n\n        \ntr\n\n            \ntd\n1\n/td\n\n            \ntd\nTV LED 42\n/td\n\n            \ntd\nR$ 1.999,00\n/td\n\n        \n/tr\n\n        \ntr\n\n            \ntd\n2\n/td\n\n            \ntd\nSony PlayStation 4\n/td\n\n            \ntd\nR$ 3.999,00\n/td\n\n        \n/tr\n\n        \ntr\n\n            \ntd\n3\n/td\n\n            \ntd\nApple iPhone 6\n/td\n\n            \ntd\nR$ 2.999,00\n/td\n\n        \n/tr\n\n    \n/tbody\n\n\n/table\n\n\n\n\n\nExemplo: \n04-tables.html\n\n\nFormul\u00e1rios\n\n\nform action=\nsubmit.php\n method=\npost\n\n    \nlabel\nCampo de texto simples\n/label\n\n    \ninput type=\ntext\n name=\nuserName\n\n\n    \nlabel\nCampo de texto de m\u00faltiplas linhas\n/label\n\n    \ntextarea name=\nuserBio\n/textarea\n\n\n    \nlabel\nCheckbox \ninput type=\ncheckbox\n name=\nagreeTerms\n/label\n\n\n    \nlabel\nRadio op\u00e7\u00e3o 1 \ninput type=\nradio\n name=\ngender\n value=\nm\n/label\n\n    \nlabel\nRadio op\u00e7\u00e3o 2 \ninput type=\nradio\n name=\ngender\n value=\nf\n/label\n\n\n    \nlabel\nDropdown\n/label\n\n    \nselect name=\ncity\n\n        \noption value=\n1\nBelo Horizonte\n/option\n\n        \noption value=\n2\nCampinas\n/option\n\n        \noption value=\n3\nS\u00e3o Paulo\n/option\n\n    \n/select\n\n\n    \ninput type=\nsubmit\n value=\nEnviar\n\n\n/form\n\n\n\n\n\nExemplo: \n05-forms.html\n\n\nTags div e span\n\n\ndiv\n e \nspan\n s\u00e3o tags sem valor sem\u00e2ntico, mas muito \u00fateis para subdividir o documento em partes para facilitar a estiliza\u00e7\u00e3o com CSS.\n\n\nAtributos class e id\n\n\nExerc\u00edcio\n\n\nEstruturar o HTML a partir de um layout (sem CSS).", 
+            "title": "HTML"
+        }, 
+        {
+            "location": "/html/#html", 
+            "text": "HTML \u00e9 uma linguagem de marca\u00e7\u00e3o, usada para estruturar o conte\u00fado de uma p\u00e1gina.", 
+            "title": "HTML"
+        }, 
+        {
+            "location": "/html/#sintaxe", 
+            "text": "!-- tag com conte\u00fado --  tag atributo= valor conte\u00fado /tag  !-- tag sem conte\u00fado --  tag", 
+            "title": "Sintaxe"
+        }, 
+        {
+            "location": "/html/#doctype-e-html", 
+            "text": "O  DOCTYPE  diz para o navegador que o documento \u00e9 um HTML. Vem antes de qualquer outra tag no documento.\nA tag  html  engloba todo o documento.  !DOCTYPE html  html  /html", 
+            "title": "DOCTYPE e html"
+        }, 
+        {
+            "location": "/html/#tags-head-e-body", 
+            "text": "No  head  ficam metadados da p\u00e1gina, informa\u00e7\u00f5es n\u00e3o vis\u00edveis ao usu\u00e1rio (exceto o t\u00edtulo).\nNo  body  fica o conte\u00fado que ser\u00e1 apresentado ao usu\u00e1rio.  !DOCTYPE html  html \n     head \n         meta charset= UTF-8 \n         title T\u00edtulo da p\u00e1gina /title \n     /head \n     body \n         p Um par\u00e1grafo de texto. /p \n     /body  /html", 
+            "title": "Tags head e body"
+        }, 
+        {
+            "location": "/html/#textos", 
+            "text": "Cabe\u00e7alhos e par\u00e1grafos.  h1 Cabe\u00e7alho de n\u00edvel 1 - O principal do documento /h1  h2 Cabe\u00e7alho n\u00edvel 2 /h2  h3 ... /h3 \n... h6 ... /h6  p Par\u00e1grafo de texto /p  p Par\u00e1grafo com quebra de linha  br for\u00e7ada. /p   Exemplo:  01-text.html", 
+            "title": "Textos"
+        }, 
+        {
+            "location": "/html/#links", 
+            "text": "p Procure no  a href= http://www.google.com Google /a p  p Link para  a href= /pagina/interna.html p\u00e1gina interna /a", 
+            "title": "Links"
+        }, 
+        {
+            "location": "/html/#imagens", 
+            "text": "img src= logo.jpg  alt= Logo da empresa  p Imagens tamb\u00e9m podem ser links:  a href= /pagina/interna.html img src= icone.jpg  alt= \u00cdcone /a /p   Exemplo:  02-links-images.html", 
+            "title": "Imagens"
+        }, 
+        {
+            "location": "/html/#listas", 
+            "text": "Lista n\u00e3o ordenada:  ul \n     li HTML /li \n     li CSS\n         ul \n             li SASS /li \n             li LESS /li \n         /ul \n     /li \n     li JavaScript /li  /ul   Lista ordenada:  ol \n     li HTML /li \n     li CSS\n         ol \n             li SASS /li \n             li LESS /li \n         /ol \n     /li \n     li JavaScript /li  /ol   Exemplo:  03-lists.html", 
+            "title": "Listas"
+        }, 
+        {
+            "location": "/html/#tabelas", 
+            "text": "table \n     thead \n         tr \n             th ID /th \n             th Descri\u00e7\u00e3o /th \n             th Pre\u00e7o /th \n         /tr \n     /tead \n     tbody \n         tr \n             td 1 /td \n             td TV LED 42 /td \n             td R$ 1.999,00 /td \n         /tr \n         tr \n             td 2 /td \n             td Sony PlayStation 4 /td \n             td R$ 3.999,00 /td \n         /tr \n         tr \n             td 3 /td \n             td Apple iPhone 6 /td \n             td R$ 2.999,00 /td \n         /tr \n     /tbody  /table   Exemplo:  04-tables.html", 
+            "title": "Tabelas"
+        }, 
+        {
+            "location": "/html/#formularios", 
+            "text": "form action= submit.php  method= post \n     label Campo de texto simples /label \n     input type= text  name= userName \n\n     label Campo de texto de m\u00faltiplas linhas /label \n     textarea name= userBio /textarea \n\n     label Checkbox  input type= checkbox  name= agreeTerms /label \n\n     label Radio op\u00e7\u00e3o 1  input type= radio  name= gender  value= m /label \n     label Radio op\u00e7\u00e3o 2  input type= radio  name= gender  value= f /label \n\n     label Dropdown /label \n     select name= city \n         option value= 1 Belo Horizonte /option \n         option value= 2 Campinas /option \n         option value= 3 S\u00e3o Paulo /option \n     /select \n\n     input type= submit  value= Enviar  /form   Exemplo:  05-forms.html", 
+            "title": "Formul\u00e1rios"
+        }, 
+        {
+            "location": "/html/#tags-div-e-span", 
+            "text": "div  e  span  s\u00e3o tags sem valor sem\u00e2ntico, mas muito \u00fateis para subdividir o documento em partes para facilitar a estiliza\u00e7\u00e3o com CSS.", 
+            "title": "Tags div e span"
+        }, 
+        {
+            "location": "/html/#atributos-class-e-id", 
+            "text": "", 
+            "title": "Atributos class e id"
+        }, 
+        {
+            "location": "/html/#exercicio", 
+            "text": "Estruturar o HTML a partir de um layout (sem CSS).", 
+            "title": "Exerc\u00edcio"
+        }, 
+        {
+            "location": "/html5/", 
+            "text": "HTML5\n\n\nCan I use?\n\n\nVerificar compatibilidade de navegadores no site \nCan I use\n.\nExemplo de busca no Google: \"caniuse html5 tags\"\n\n\nTags sem\u00e2nticas\n\n\nV\u00eddeo\n\n\n\u00c1udio\n\n\nFormul\u00e1rios\n\n\nNovos atributos\n\n\nNovos tipos de campos", 
+            "title": "HTML5"
+        }, 
+        {
+            "location": "/html5/#html5", 
+            "text": "", 
+            "title": "HTML5"
+        }, 
+        {
+            "location": "/html5/#can-i-use", 
+            "text": "Verificar compatibilidade de navegadores no site  Can I use .\nExemplo de busca no Google: \"caniuse html5 tags\"", 
+            "title": "Can I use?"
+        }, 
+        {
+            "location": "/html5/#tags-semanticas", 
+            "text": "", 
+            "title": "Tags sem\u00e2nticas"
+        }, 
+        {
+            "location": "/html5/#video", 
+            "text": "", 
+            "title": "V\u00eddeo"
+        }, 
+        {
+            "location": "/html5/#audio", 
+            "text": "", 
+            "title": "\u00c1udio"
+        }, 
+        {
+            "location": "/html5/#formularios", 
+            "text": "", 
+            "title": "Formul\u00e1rios"
+        }, 
+        {
+            "location": "/html5/#novos-atributos", 
+            "text": "", 
+            "title": "Novos atributos"
+        }, 
+        {
+            "location": "/html5/#novos-tipos-de-campos", 
+            "text": "", 
+            "title": "Novos tipos de campos"
+        }, 
+        {
+            "location": "/css/", 
+            "text": "CSS\n\n\nFormas de inser\u00e7\u00e3o\n\n\nInline:\n\n\np style=\ncolor: red\nTexto em vermelho\n/p\n\n\n\n\n\nVia tag \nstyle\n, geralmente no \nhead\n:\n\n\nhead\n\n    \nstyle\n\n        p {\n            color: red;\n        }\n    \n/style\n\n\n/head\n\n\n\n\n\nVia arquivo separado: (Recomendado!)\n\n\nhead\n\n    \nlink rel=\nstylesheet\n href=\nstyle.css\n\n\n/head\n\n\n\n\n\nSintaxe\n\n\nseletor {\n    atributo: valor;\n}\n\np {\n    color: red;\n    font-size: 13px;\n    margin: 10px;\n}\n\n\n\n\nSeletores\n\n\nTag\n\n\nExemplo, mudar a cor de todos os par\u00e1grafos para vermelho:\n\n\np {\n     color: red;\n}\n\n\n\n\nClasse\n\n\nExemplo, mudar a cor de todos os elementos que contenham o atributo \nclass=\"destaque\"\n para vermelho:\n\n\n.destaque {\n     color: red;\n}\n\n\n\n\nExemplo, mudar a cor de todos os elementos que contenham ambas as classes 'destaque' e 'erro':\n\n\n.destaque.erro {\n     color: red;\n}\n\n\n\n\nID\n\n\nExemplo, mudar a cor apenas do elemento que cont\u00e9m o atributo \nid=\"erro\"\n para vermelho:\n\n\n#erro {\n     color: red;\n}\n\n\n\n\nAtributo\n\n\nAfeta todos os \ninput type=\"text\"\n:\n\n\ninput[type=\ntext\n] {\n    color: blue;\n}\n\n\n\n\nNOTA:\n Estilos aplicados a um elemento afetam todos os elementos filhos. Ex:\n\n\np {\n    color: red;\n}\nspan {\n    font-weight: bold;\n}\n\n\n\n\np\n Este texto \u00e9 vermelho, \nspan\nest\u00e9 \u00e9 vermelho e negrito\n/span\n.\n/p\n\n\n\n\n\nUnidades\n\n\ncores (name, hex, rgb, rgba)\nmedidas: px, %, em\n\n\nTextos\n\n\nFontes, tamanhos e cores:\n\n\np {\n    font-family: Arial, Helvetica, sans-serif; /* fam\u00edlia de fontes - usa a primeira da lista que encontrar */\n    font-size: 13px; /* tamanho */\n    font-weight: bold; /* bold (negrito), normal */\n    font-style: italic; /* italic, normal */\n    color: #f00; /* cor do texto*/\n    line-height: 15px; /* altura da linha */\n\n    /* forma abreviada */\n    /* weight style size/line-height family */\n    font: bold italic 13px/15px Arial, Helvetica, sans-serif;\n}\n\n\n\n\nAlinhamento:\n\n\np {\n    text-align: center; /* center, left, right, justify */\n}\n\n\n\n\nDecoration, transform:\n\n\np {\n    text-decoration: underline; /* underline, overline, line-through, none */\n    text-transform: uppercase; /* uppercase, lowercase, capitalize, none */\n}\n\n\n\n\nExemplo: \n03-texts.html\n\n\nDisplay\n\n\nblock, inline, inline-block, none, visibility, opacity\n\n\nBox Model\n\n\n\n\ndiv {\n    width: 100px; /* largura */\n    height: 100px; /* altura */\n    padding: 10px; /* espa\u00e7o entre as bordas e o conte\u00fado */\n    border: 1px solid red; /* espessura, estilo e cor das bordas */\n    margin: 5px; /* espa\u00e7o do lado de fora das bordas */\n}\n\n\n\n\nExemplo: \n01-box-model.html\n\n\n\u00c9 poss\u00edvel definir margens, bordas e paddings diferentes em cada lado do elemento:\n\n\ndiv {\n    /***************************** padding */\n    padding-top: 1px; /* cima */\n    padding-right: 2px; /* direita */\n    padding-bottom: 3px; /* baixo */\n    padding-left: 4px; /* esquerda */\n\n    /* ou de forma abreviada: */\n    padding: 1px 2px 3px 4px; /* sentido hor\u00e1rio: cima, direita, baixo, esquerda */\n\n    /* ou ainda: */\n    padding: 5px 10px; /* cima e baixo com 5px, direita e esquerda com 10px */\n\n\n    /***************************** margin: */\n    margin-top: 1px;\n    margin-right: 2px;\n    margin-bottom: 3px;\n    margin-left: 4px;\n\n    margin: 1px 2px 3px 4px;\n\n    margin: 5px 10px;\n\n\n    /***************************** border */\n    border-top: 1px solid red;\n    border-right: 1px dotted blue;\n    border-bottom: 1px dashed green;\n    border-left: 1px double black;\n\n    border-width: 1px 2px 3px 4px;\n    border-width: 5px 10px;\n\n    border-color: red green blue black;\n    border-color: red green;\n\n    border-style: solid dashed dotted double;\n    border-style: solid dashed;\n\n    /* pode combinar lados (top, right, bottom, left) com atributo (width, style, color): */\n    border-left-color: red;\n    border-top-width: 2px;\n    border-bottom-style: solid;\n}\n\n\n\n\nbox-sizing: border-box\n\n\nAdicionando \nbox-sizing: border-box\n a largura (width) do elemento engloba padding e bordas, ao contr\u00e1rio do box model padr\u00e3o onde a largura considera apenas a \u00e1rea dentro do padding.\n\n\nExemplo: \n02-box-sizing.html\n\n\nRecomenda\u00e7\u00e3o em novos projetos: aplicar \nbox-sizing: border-box\n em todos os elementos, da seguinte forma:\n\n\nhtml {\n    box-sizing: border-box;\n}\n*, *:before, *:after {\n    box-sizing: inherit;\n}\n\n\n\n\nPaul Irish recomendando border-box\n\n\nPosicionamento\n\n\nposition, float\n\n\nPseudo classes\n\n\nhover, focus, active\n\n\nExerc\u00edcio\n\n\nEstilizar o HTML do exerc\u00edcio anterior (pode modificar o HTML).", 
+            "title": "CSS"
+        }, 
+        {
+            "location": "/css/#css", 
+            "text": "", 
+            "title": "CSS"
+        }, 
+        {
+            "location": "/css/#formas-de-insercao", 
+            "text": "Inline:  p style= color: red Texto em vermelho /p   Via tag  style , geralmente no  head :  head \n     style \n        p {\n            color: red;\n        }\n     /style  /head   Via arquivo separado: (Recomendado!)  head \n     link rel= stylesheet  href= style.css  /head", 
+            "title": "Formas de inser\u00e7\u00e3o"
+        }, 
+        {
+            "location": "/css/#sintaxe", 
+            "text": "seletor {\n    atributo: valor;\n}\n\np {\n    color: red;\n    font-size: 13px;\n    margin: 10px;\n}", 
+            "title": "Sintaxe"
+        }, 
+        {
+            "location": "/css/#seletores", 
+            "text": "", 
+            "title": "Seletores"
+        }, 
+        {
+            "location": "/css/#tag", 
+            "text": "Exemplo, mudar a cor de todos os par\u00e1grafos para vermelho:  p {\n     color: red;\n}", 
+            "title": "Tag"
+        }, 
+        {
+            "location": "/css/#classe", 
+            "text": "Exemplo, mudar a cor de todos os elementos que contenham o atributo  class=\"destaque\"  para vermelho:  .destaque {\n     color: red;\n}  Exemplo, mudar a cor de todos os elementos que contenham ambas as classes 'destaque' e 'erro':  .destaque.erro {\n     color: red;\n}", 
+            "title": "Classe"
+        }, 
+        {
+            "location": "/css/#id", 
+            "text": "Exemplo, mudar a cor apenas do elemento que cont\u00e9m o atributo  id=\"erro\"  para vermelho:  #erro {\n     color: red;\n}", 
+            "title": "ID"
+        }, 
+        {
+            "location": "/css/#atributo", 
+            "text": "Afeta todos os  input type=\"text\" :  input[type= text ] {\n    color: blue;\n}  NOTA:  Estilos aplicados a um elemento afetam todos os elementos filhos. Ex:  p {\n    color: red;\n}\nspan {\n    font-weight: bold;\n}  p  Este texto \u00e9 vermelho,  span est\u00e9 \u00e9 vermelho e negrito /span . /p", 
+            "title": "Atributo"
+        }, 
+        {
+            "location": "/css/#unidades", 
+            "text": "cores (name, hex, rgb, rgba)\nmedidas: px, %, em", 
+            "title": "Unidades"
+        }, 
+        {
+            "location": "/css/#textos", 
+            "text": "Fontes, tamanhos e cores:  p {\n    font-family: Arial, Helvetica, sans-serif; /* fam\u00edlia de fontes - usa a primeira da lista que encontrar */\n    font-size: 13px; /* tamanho */\n    font-weight: bold; /* bold (negrito), normal */\n    font-style: italic; /* italic, normal */\n    color: #f00; /* cor do texto*/\n    line-height: 15px; /* altura da linha */\n\n    /* forma abreviada */\n    /* weight style size/line-height family */\n    font: bold italic 13px/15px Arial, Helvetica, sans-serif;\n}  Alinhamento:  p {\n    text-align: center; /* center, left, right, justify */\n}  Decoration, transform:  p {\n    text-decoration: underline; /* underline, overline, line-through, none */\n    text-transform: uppercase; /* uppercase, lowercase, capitalize, none */\n}  Exemplo:  03-texts.html", 
+            "title": "Textos"
+        }, 
+        {
+            "location": "/css/#display", 
+            "text": "block, inline, inline-block, none, visibility, opacity", 
+            "title": "Display"
+        }, 
+        {
+            "location": "/css/#box-model", 
+            "text": "div {\n    width: 100px; /* largura */\n    height: 100px; /* altura */\n    padding: 10px; /* espa\u00e7o entre as bordas e o conte\u00fado */\n    border: 1px solid red; /* espessura, estilo e cor das bordas */\n    margin: 5px; /* espa\u00e7o do lado de fora das bordas */\n}  Exemplo:  01-box-model.html  \u00c9 poss\u00edvel definir margens, bordas e paddings diferentes em cada lado do elemento:  div {\n    /***************************** padding */\n    padding-top: 1px; /* cima */\n    padding-right: 2px; /* direita */\n    padding-bottom: 3px; /* baixo */\n    padding-left: 4px; /* esquerda */\n\n    /* ou de forma abreviada: */\n    padding: 1px 2px 3px 4px; /* sentido hor\u00e1rio: cima, direita, baixo, esquerda */\n\n    /* ou ainda: */\n    padding: 5px 10px; /* cima e baixo com 5px, direita e esquerda com 10px */\n\n\n    /***************************** margin: */\n    margin-top: 1px;\n    margin-right: 2px;\n    margin-bottom: 3px;\n    margin-left: 4px;\n\n    margin: 1px 2px 3px 4px;\n\n    margin: 5px 10px;\n\n\n    /***************************** border */\n    border-top: 1px solid red;\n    border-right: 1px dotted blue;\n    border-bottom: 1px dashed green;\n    border-left: 1px double black;\n\n    border-width: 1px 2px 3px 4px;\n    border-width: 5px 10px;\n\n    border-color: red green blue black;\n    border-color: red green;\n\n    border-style: solid dashed dotted double;\n    border-style: solid dashed;\n\n    /* pode combinar lados (top, right, bottom, left) com atributo (width, style, color): */\n    border-left-color: red;\n    border-top-width: 2px;\n    border-bottom-style: solid;\n}", 
+            "title": "Box Model"
+        }, 
+        {
+            "location": "/css/#box-sizing-border-box", 
+            "text": "Adicionando  box-sizing: border-box  a largura (width) do elemento engloba padding e bordas, ao contr\u00e1rio do box model padr\u00e3o onde a largura considera apenas a \u00e1rea dentro do padding.  Exemplo:  02-box-sizing.html  Recomenda\u00e7\u00e3o em novos projetos: aplicar  box-sizing: border-box  em todos os elementos, da seguinte forma:  html {\n    box-sizing: border-box;\n}\n*, *:before, *:after {\n    box-sizing: inherit;\n}  Paul Irish recomendando border-box", 
+            "title": "box-sizing: border-box"
+        }, 
+        {
+            "location": "/css/#posicionamento", 
+            "text": "position, float", 
+            "title": "Posicionamento"
+        }, 
+        {
+            "location": "/css/#pseudo-classes", 
+            "text": "hover, focus, active", 
+            "title": "Pseudo classes"
+        }, 
+        {
+            "location": "/css/#exercicio", 
+            "text": "Estilizar o HTML do exerc\u00edcio anterior (pode modificar o HTML).", 
+            "title": "Exerc\u00edcio"
+        }, 
+        {
+            "location": "/css3/", 
+            "text": "CSS3\n\n\nSeletores\n\n\nEfeitos visuais\n\n\nCantos arrendondados\n\n\nSombras\n\n\nWeb fonts\n\n\nTransi\u00e7\u00f5es\n\n\nTransforma\u00e7\u00f5es\n\n\nAnima\u00e7\u00e3o", 
+            "title": "CSS3"
+        }, 
+        {
+            "location": "/css3/#css3", 
+            "text": "", 
+            "title": "CSS3"
+        }, 
+        {
+            "location": "/css3/#seletores", 
+            "text": "", 
+            "title": "Seletores"
+        }, 
+        {
+            "location": "/css3/#efeitos-visuais", 
+            "text": "", 
+            "title": "Efeitos visuais"
+        }, 
+        {
+            "location": "/css3/#cantos-arrendondados", 
+            "text": "", 
+            "title": "Cantos arrendondados"
+        }, 
+        {
+            "location": "/css3/#sombras", 
+            "text": "", 
+            "title": "Sombras"
+        }, 
+        {
+            "location": "/css3/#web-fonts", 
+            "text": "", 
+            "title": "Web fonts"
+        }, 
+        {
+            "location": "/css3/#transicoes", 
+            "text": "", 
+            "title": "Transi\u00e7\u00f5es"
+        }, 
+        {
+            "location": "/css3/#transformacoes", 
+            "text": "", 
+            "title": "Transforma\u00e7\u00f5es"
+        }, 
+        {
+            "location": "/css3/#animacao", 
+            "text": "", 
+            "title": "Anima\u00e7\u00e3o"
+        }, 
+        {
+            "location": "/responsive/", 
+            "text": "Design Responsivo\n\n\nLayout fluido\n\n\nMedia queries", 
+            "title": "Design Responsivo"
+        }, 
+        {
+            "location": "/responsive/#design-responsivo", 
+            "text": "", 
+            "title": "Design Responsivo"
+        }, 
+        {
+            "location": "/responsive/#layout-fluido", 
+            "text": "", 
+            "title": "Layout fluido"
+        }, 
+        {
+            "location": "/responsive/#media-queries", 
+            "text": "", 
+            "title": "Media queries"
+        }
+    ]
+}

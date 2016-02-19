@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>CSS - Treinamento HTML & CSS</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "CSS";
+    var mkdocs_page_input_path = "css/index.md";
+    var mkdocs_page_url = "/css/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Treinamento HTML & CSS</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../html/">HTML</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../html5/">HTML5</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">CSS</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#css">CSS</a></li>
+                
+                    <li><a class="toctree-l4" href="#formas-de-insercao">Formas de inserção</a></li>
+                
+                    <li><a class="toctree-l4" href="#sintaxe">Sintaxe</a></li>
+                
+                    <li><a class="toctree-l4" href="#seletores">Seletores</a></li>
+                
+                    <li><a class="toctree-l4" href="#unidades">Unidades</a></li>
+                
+                    <li><a class="toctree-l4" href="#textos">Textos</a></li>
+                
+                    <li><a class="toctree-l4" href="#display">Display</a></li>
+                
+                    <li><a class="toctree-l4" href="#box-model">Box Model</a></li>
+                
+                    <li><a class="toctree-l4" href="#box-sizing-border-box">box-sizing: border-box</a></li>
+                
+                    <li><a class="toctree-l4" href="#posicionamento">Posicionamento</a></li>
+                
+                    <li><a class="toctree-l4" href="#pseudo-classes">Pseudo classes</a></li>
+                
+                    <li><a class="toctree-l4" href="#exercicio">Exercício</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../css3/">CSS3</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../responsive/">Design Responsivo</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Treinamento HTML & CSS</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>CSS</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="css">CSS</h1>
+<h2 id="formas-de-insercao">Formas de inserção</h2>
+<p>Inline:</p>
+<pre><code class="html">&lt;p style=&quot;color: red&quot;&gt;Texto em vermelho&lt;/p&gt;
+</code></pre>
+
+<p>Via tag <code>&lt;style&gt;</code>, geralmente no <code>&lt;head&gt;</code>:</p>
+<pre><code class="html">&lt;head&gt;
+    &lt;style&gt;
+        p {
+            color: red;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+</code></pre>
+
+<p>Via arquivo separado: (Recomendado!)</p>
+<pre><code class="html">&lt;head&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+&lt;/head&gt;
+</code></pre>
+
+<h2 id="sintaxe">Sintaxe</h2>
+<pre><code class="css">seletor {
+    atributo: valor;
+}
+
+p {
+    color: red;
+    font-size: 13px;
+    margin: 10px;
+}
+</code></pre>
+
+<h2 id="seletores">Seletores</h2>
+<h3 id="tag">Tag</h3>
+<p>Exemplo, mudar a cor de todos os parágrafos para vermelho:</p>
+<pre><code class="css">p {
+     color: red;
+}
+</code></pre>
+
+<h3 id="classe">Classe</h3>
+<p>Exemplo, mudar a cor de todos os elementos que contenham o atributo <code>class="destaque"</code> para vermelho:</p>
+<pre><code class="css">.destaque {
+     color: red;
+}
+</code></pre>
+
+<p>Exemplo, mudar a cor de todos os elementos que contenham ambas as classes 'destaque' e 'erro':</p>
+<pre><code class="css">.destaque.erro {
+     color: red;
+}
+</code></pre>
+
+<h3 id="id">ID</h3>
+<p>Exemplo, mudar a cor apenas do elemento que contém o atributo <code>id="erro"</code> para vermelho:</p>
+<pre><code class="css">#erro {
+     color: red;
+}
+</code></pre>
+
+<h3 id="atributo">Atributo</h3>
+<p>Afeta todos os <code>&lt;input type="text"&gt;</code>:</p>
+<pre><code class="css">input[type=&quot;text&quot;] {
+    color: blue;
+}
+</code></pre>
+
+<p><strong>NOTA:</strong> Estilos aplicados a um elemento afetam todos os elementos filhos. Ex:</p>
+<pre><code class="css">p {
+    color: red;
+}
+span {
+    font-weight: bold;
+}
+</code></pre>
+
+<pre><code class="html">&lt;p&gt; Este texto é vermelho, &lt;span&gt;esté é vermelho e negrito&lt;/span&gt;.&lt;/p&gt;
+</code></pre>
+
+<h2 id="unidades">Unidades</h2>
+<p>cores (name, hex, rgb, rgba)
+medidas: px, %, em</p>
+<h2 id="textos">Textos</h2>
+<p>Fontes, tamanhos e cores:</p>
+<pre><code class="css">p {
+    font-family: Arial, Helvetica, sans-serif; /* família de fontes - usa a primeira da lista que encontrar */
+    font-size: 13px; /* tamanho */
+    font-weight: bold; /* bold (negrito), normal */
+    font-style: italic; /* italic, normal */
+    color: #f00; /* cor do texto*/
+    line-height: 15px; /* altura da linha */
+
+    /* forma abreviada */
+    /* weight style size/line-height family */
+    font: bold italic 13px/15px Arial, Helvetica, sans-serif;
+}
+</code></pre>
+
+<p>Alinhamento:</p>
+<pre><code class="css">p {
+    text-align: center; /* center, left, right, justify */
+}
+</code></pre>
+
+<p>Decoration, transform:</p>
+<pre><code class="css">p {
+    text-decoration: underline; /* underline, overline, line-through, none */
+    text-transform: uppercase; /* uppercase, lowercase, capitalize, none */
+}
+</code></pre>
+
+<p>Exemplo: <a href="../css/examples/03-texts.html">03-texts.html</a></p>
+<h2 id="display">Display</h2>
+<p>block, inline, inline-block, none, visibility, opacity</p>
+<h2 id="box-model">Box Model</h2>
+<p><img alt="ilustração box model" src="../css/css_box_model.gif" title="" /></p>
+<pre><code class="css">div {
+    width: 100px; /* largura */
+    height: 100px; /* altura */
+    padding: 10px; /* espaço entre as bordas e o conteúdo */
+    border: 1px solid red; /* espessura, estilo e cor das bordas */
+    margin: 5px; /* espaço do lado de fora das bordas */
+}
+</code></pre>
+
+<p>Exemplo: <a href="../css/examples/01-box-model.html">01-box-model.html</a></p>
+<p>É possível definir margens, bordas e paddings diferentes em cada lado do elemento:</p>
+<pre><code class="css">div {
+    /***************************** padding */
+    padding-top: 1px; /* cima */
+    padding-right: 2px; /* direita */
+    padding-bottom: 3px; /* baixo */
+    padding-left: 4px; /* esquerda */
+
+    /* ou de forma abreviada: */
+    padding: 1px 2px 3px 4px; /* sentido horário: cima, direita, baixo, esquerda */
+
+    /* ou ainda: */
+    padding: 5px 10px; /* cima e baixo com 5px, direita e esquerda com 10px */
+
+
+    /***************************** margin: */
+    margin-top: 1px;
+    margin-right: 2px;
+    margin-bottom: 3px;
+    margin-left: 4px;
+
+    margin: 1px 2px 3px 4px;
+
+    margin: 5px 10px;
+
+
+    /***************************** border */
+    border-top: 1px solid red;
+    border-right: 1px dotted blue;
+    border-bottom: 1px dashed green;
+    border-left: 1px double black;
+
+    border-width: 1px 2px 3px 4px;
+    border-width: 5px 10px;
+
+    border-color: red green blue black;
+    border-color: red green;
+
+    border-style: solid dashed dotted double;
+    border-style: solid dashed;
+
+    /* pode combinar lados (top, right, bottom, left) com atributo (width, style, color): */
+    border-left-color: red;
+    border-top-width: 2px;
+    border-bottom-style: solid;
+}
+</code></pre>
+
+<h2 id="box-sizing-border-box">box-sizing: border-box</h2>
+<p>Adicionando <code>box-sizing: border-box</code> a largura (width) do elemento engloba padding e bordas, ao contrário do box model padrão onde a largura considera apenas a área dentro do padding.</p>
+<p>Exemplo: <a href="../css/examples/02-box-sizing.html">02-box-sizing.html</a></p>
+<p>Recomendação em novos projetos: aplicar <code>box-sizing: border-box</code> em todos os elementos, da seguinte forma:</p>
+<pre><code class="css">html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+</code></pre>
+
+<p><a href="http://www.paulirish.com/2012/box-sizing-border-box-ftw/">Paul Irish recomendando border-box</a></p>
+<h2 id="posicionamento">Posicionamento</h2>
+<p>position, float</p>
+<h2 id="pseudo-classes">Pseudo classes</h2>
+<p>hover, focus, active</p>
+<h2 id="exercicio">Exercício</h2>
+<p>Estilizar o HTML do exercício anterior (pode modificar o HTML).</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../css3/" class="btn btn-neutral float-right" title="CSS3">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../html5/" class="btn btn-neutral" title="HTML5"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../html5/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../css3/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>
