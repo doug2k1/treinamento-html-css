@@ -22,7 +22,7 @@
         }, 
         {
             "location": "/html/", 
-            "text": "HTML\n\n\nHTML \u00e9 uma linguagem de marca\u00e7\u00e3o, usada para estruturar o conte\u00fado de uma p\u00e1gina.\n\n\nSintaxe\n\n\n!-- tag com conte\u00fado --\n\n\ntag atributo=\nvalor\nconte\u00fado\n/tag\n\n\n\n!-- tag sem conte\u00fado --\n\n\ntag\n\n\n\n\n\nDOCTYPE e html\n\n\nO \nDOCTYPE\n diz para o navegador que o documento \u00e9 um HTML. Vem antes de qualquer outra tag no documento.\nA tag \nhtml\n engloba todo o documento.\n\n\n!DOCTYPE html\n\n\nhtml\n\n\n\n/html\n\n\n\n\n\nTags head e body\n\n\nNo \nhead\n ficam metadados da p\u00e1gina, informa\u00e7\u00f5es n\u00e3o vis\u00edveis ao usu\u00e1rio (exceto o t\u00edtulo).\nNo \nbody\n fica o conte\u00fado que ser\u00e1 apresentado ao usu\u00e1rio.\n\n\n!DOCTYPE html\n\n\nhtml\n\n    \nhead\n\n        \nmeta charset=\nUTF-8\n\n        \ntitle\nT\u00edtulo da p\u00e1gina\n/title\n\n    \n/head\n\n    \nbody\n\n        \np\nUm par\u00e1grafo de texto.\n/p\n\n    \n/body\n\n\n/html\n\n\n\n\n\nTextos\n\n\nCabe\u00e7alhos e par\u00e1grafos.\n\n\nh1\nCabe\u00e7alho de n\u00edvel 1 - O principal do documento\n/h1\n\n\nh2\nCabe\u00e7alho n\u00edvel 2\n/h2\n\n\nh3\n...\n/h3\n\n...\n\nh6\n...\n/h6\n\n\n\np\nPar\u00e1grafo de texto\n/p\n\n\np\nPar\u00e1grafo com quebra de linha \nbr\nfor\u00e7ada.\n/p\n\n\n\n\n\nExemplo: \n01-text.html\n\n\nLinks\n\n\np\nProcure no \na href=\nhttp://www.google.com\nGoogle\n/a\np\n\n\n\np\nLink para \na href=\n/pagina/interna.html\np\u00e1gina interna\n/a\n\n\n\n\n\nImagens\n\n\nimg src=\nlogo.jpg\n alt=\nLogo da empresa\n\n\n\np\nImagens tamb\u00e9m podem ser links: \na href=\n/pagina/interna.html\nimg src=\nicone.jpg\n alt=\n\u00cdcone\n/a\n/p\n\n\n\n\n\nExemplo: \n02-links-images.html\n\n\nListas\n\n\nLista n\u00e3o ordenada:\n\n\nul\n\n    \nli\nHTML\n/li\n\n    \nli\nCSS\n        \nul\n\n            \nli\nSASS\n/li\n\n            \nli\nLESS\n/li\n\n        \n/ul\n\n    \n/li\n\n    \nli\nJavaScript\n/li\n\n\n/ul\n\n\n\n\n\nLista ordenada:\n\n\nol\n\n    \nli\nHTML\n/li\n\n    \nli\nCSS\n        \nol\n\n            \nli\nSASS\n/li\n\n            \nli\nLESS\n/li\n\n        \n/ol\n\n    \n/li\n\n    \nli\nJavaScript\n/li\n\n\n/ol\n\n\n\n\n\nExemplo: \n03-lists.html\n\n\nTabelas\n\n\ntable\n\n    \nthead\n\n        \ntr\n\n            \nth\nID\n/th\n\n            \nth\nDescri\u00e7\u00e3o\n/th\n\n            \nth\nPre\u00e7o\n/th\n\n        \n/tr\n\n    \n/tead\n\n    \ntbody\n\n        \ntr\n\n            \ntd\n1\n/td\n\n            \ntd\nTV LED 42\n/td\n\n            \ntd\nR$ 1.999,00\n/td\n\n        \n/tr\n\n        \ntr\n\n            \ntd\n2\n/td\n\n            \ntd\nSony PlayStation 4\n/td\n\n            \ntd\nR$ 3.999,00\n/td\n\n        \n/tr\n\n        \ntr\n\n            \ntd\n3\n/td\n\n            \ntd\nApple iPhone 6\n/td\n\n            \ntd\nR$ 2.999,00\n/td\n\n        \n/tr\n\n    \n/tbody\n\n\n/table\n\n\n\n\n\nExemplo: \n04-tables.html\n\n\nFormul\u00e1rios\n\n\nform action=\nsubmit.php\n method=\npost\n\n    \nlabel\nCampo de texto simples\n/label\n\n    \ninput type=\ntext\n name=\nuserName\n\n\n    \nlabel\nCampo de texto de m\u00faltiplas linhas\n/label\n\n    \ntextarea name=\nuserBio\n/textarea\n\n\n    \nlabel\nCheckbox \ninput type=\ncheckbox\n name=\nagreeTerms\n/label\n\n\n    \nlabel\nRadio op\u00e7\u00e3o 1 \ninput type=\nradio\n name=\ngender\n value=\nm\n/label\n\n    \nlabel\nRadio op\u00e7\u00e3o 2 \ninput type=\nradio\n name=\ngender\n value=\nf\n/label\n\n\n    \nlabel\nDropdown\n/label\n\n    \nselect name=\ncity\n\n        \noption value=\n1\nBelo Horizonte\n/option\n\n        \noption value=\n2\nCampinas\n/option\n\n        \noption value=\n3\nS\u00e3o Paulo\n/option\n\n    \n/select\n\n\n    \ninput type=\nsubmit\n value=\nEnviar\n\n\n/form\n\n\n\n\n\nExemplo: \n05-forms.html\n\n\nTags div e span\n\n\ndiv\n e \nspan\n s\u00e3o tags sem valor sem\u00e2ntico, mas muito \u00fateis para subdividir o documento em partes para facilitar a estiliza\u00e7\u00e3o com CSS.\n\n\nAtributos class e id\n\n\nExerc\u00edcio\n\n\nEstruturar o HTML a partir de um layout (sem CSS).", 
+            "text": "HTML\n\n\nHTML \u00e9 uma linguagem de marca\u00e7\u00e3o, usada para estruturar o conte\u00fado de uma p\u00e1gina.\n\n\nSintaxe\n\n\n!-- tag com conte\u00fado --\n\n\ntag atributo=\nvalor\nconte\u00fado\n/tag\n\n\n\n!-- tag sem conte\u00fado --\n\n\ntag\n\n\n\n\n\nDOCTYPE e html\n\n\nO \nDOCTYPE\n diz para o navegador que o documento \u00e9 um HTML. Vem antes de qualquer outra tag no documento.\nA tag \nhtml\n engloba todo o documento.\n\n\n!DOCTYPE html\n\n\nhtml\n\n\n\n/html\n\n\n\n\n\nTags head e body\n\n\nNo \nhead\n ficam metadados da p\u00e1gina, informa\u00e7\u00f5es n\u00e3o vis\u00edveis ao usu\u00e1rio (exceto o t\u00edtulo).\nNo \nbody\n fica o conte\u00fado que ser\u00e1 apresentado ao usu\u00e1rio.\n\n\n!DOCTYPE html\n\n\nhtml\n\n    \nhead\n\n        \nmeta charset=\nUTF-8\n\n        \ntitle\nT\u00edtulo da p\u00e1gina\n/title\n\n    \n/head\n\n    \nbody\n\n        \np\nUm par\u00e1grafo de texto.\n/p\n\n    \n/body\n\n\n/html\n\n\n\n\n\nTextos\n\n\nCabe\u00e7alhos e par\u00e1grafos.\n\n\nh1\nCabe\u00e7alho de n\u00edvel 1 - O principal do documento\n/h1\n\n\nh2\nCabe\u00e7alho n\u00edvel 2\n/h2\n\n\nh3\n...\n/h3\n\n...\n\nh6\n...\n/h6\n\n\n\np\nPar\u00e1grafo de texto\n/p\n\n\np\nPar\u00e1grafo com quebra de linha \nbr\nfor\u00e7ada.\n/p\n\n\n\n\n\nExemplo: \n01-text.html\n\n\nLinks\n\n\np\nProcure no \na href=\nhttp://www.google.com\nGoogle\n/a\np\n\n\n\np\nLink para \na href=\n/pagina/interna.html\np\u00e1gina interna\n/a\n\n\n\n\n\nImagens\n\n\nimg src=\nlogo.jpg\n alt=\nLogo da empresa\n\n\n\np\nImagens tamb\u00e9m podem ser links: \na href=\n/pagina/interna.html\nimg src=\nicone.jpg\n alt=\n\u00cdcone\n/a\n/p\n\n\n\n\n\nExemplo: \n02-links-images.html\n\n\nListas\n\n\nLista n\u00e3o ordenada:\n\n\nul\n\n    \nli\nHTML\n/li\n\n    \nli\nCSS\n        \nul\n\n            \nli\nSASS\n/li\n\n            \nli\nLESS\n/li\n\n        \n/ul\n\n    \n/li\n\n    \nli\nJavaScript\n/li\n\n\n/ul\n\n\n\n\n\nLista ordenada:\n\n\nol\n\n    \nli\nHTML\n/li\n\n    \nli\nCSS\n        \nol\n\n            \nli\nSASS\n/li\n\n            \nli\nLESS\n/li\n\n        \n/ol\n\n    \n/li\n\n    \nli\nJavaScript\n/li\n\n\n/ol\n\n\n\n\n\nExemplo: \n03-lists.html\n\n\nTabelas\n\n\ntable\n\n    \nthead\n\n        \ntr\n\n            \nth\nID\n/th\n\n            \nth\nDescri\u00e7\u00e3o\n/th\n\n            \nth\nPre\u00e7o\n/th\n\n        \n/tr\n\n    \n/tead\n\n    \ntbody\n\n        \ntr\n\n            \ntd\n1\n/td\n\n            \ntd\nTV LED 42\n/td\n\n            \ntd\nR$ 1.999,00\n/td\n\n        \n/tr\n\n        \ntr\n\n            \ntd\n2\n/td\n\n            \ntd\nSony PlayStation 4\n/td\n\n            \ntd\nR$ 3.999,00\n/td\n\n        \n/tr\n\n        \ntr\n\n            \ntd\n3\n/td\n\n            \ntd\nApple iPhone 6\n/td\n\n            \ntd\nR$ 2.999,00\n/td\n\n        \n/tr\n\n    \n/tbody\n\n\n/table\n\n\n\n\n\nExemplo: \n04-tables.html\n\n\nFormul\u00e1rios\n\n\nform action=\nsubmit.php\n method=\npost\n\n    \nlabel\nCampo de texto simples\n/label\n\n    \ninput type=\ntext\n name=\nuserName\n\n\n    \nlabel\nCampo de texto de m\u00faltiplas linhas\n/label\n\n    \ntextarea name=\nuserBio\n/textarea\n\n\n    \nlabel\nCheckbox \ninput type=\ncheckbox\n name=\nagreeTerms\n/label\n\n\n    \nlabel\nRadio op\u00e7\u00e3o 1 \ninput type=\nradio\n name=\ngender\n value=\nm\n/label\n\n    \nlabel\nRadio op\u00e7\u00e3o 2 \ninput type=\nradio\n name=\ngender\n value=\nf\n/label\n\n\n    \nlabel\nDropdown\n/label\n\n    \nselect name=\ncity\n\n        \noption value=\n1\nBelo Horizonte\n/option\n\n        \noption value=\n2\nCampinas\n/option\n\n        \noption value=\n3\nS\u00e3o Paulo\n/option\n\n    \n/select\n\n\n    \ninput type=\nsubmit\n value=\nEnviar\n\n\n/form\n\n\n\n\n\nExemplo: \n05-forms.html\n\n\nTags div e span\n\n\ndiv\n e \nspan\n s\u00e3o tags sem valor sem\u00e2ntico, mas muito \u00fateis para subdividir o documento em partes para facilitar a estiliza\u00e7\u00e3o com CSS.\n\n\nAtributos class e id\n\n\nClassifica e identifica elementos. \nid\n deve ser \u00fanico na p\u00e1gina. \nclass\n pode se repetir e \u00e9 muito usado para estilizar os elementos com CSS.\n\n\n    \ndiv id=\nheader\n\n        \na class=\nnav-link\n href=\n/\nHome\n/a\n\n    \n/div\n\n\n\n\n\nExerc\u00edcio\n\n\nEstruturar o HTML a partir de um layout (sem CSS).", 
             "title": "HTML"
         }, 
         {
@@ -82,12 +82,117 @@
         }, 
         {
             "location": "/html/#atributos-class-e-id", 
-            "text": "", 
+            "text": "Classifica e identifica elementos.  id  deve ser \u00fanico na p\u00e1gina.  class  pode se repetir e \u00e9 muito usado para estilizar os elementos com CSS.       div id= header \n         a class= nav-link  href= / Home /a \n     /div", 
             "title": "Atributos class e id"
         }, 
         {
             "location": "/html/#exercicio", 
             "text": "Estruturar o HTML a partir de um layout (sem CSS).", 
+            "title": "Exerc\u00edcio"
+        }, 
+        {
+            "location": "/css/", 
+            "text": "CSS\n\n\nFormas de inser\u00e7\u00e3o\n\n\nInline:\n\n\np style=\ncolor: red\nTexto em vermelho\n/p\n\n\n\n\n\nVia tag \nstyle\n, geralmente no \nhead\n:\n\n\nhead\n\n    \nstyle\n\n        p {\n            color: red;\n        }\n    \n/style\n\n\n/head\n\n\n\n\n\nVia arquivo separado: (Recomendado!)\n\n\nhead\n\n    \nlink rel=\nstylesheet\n href=\nstyle.css\n\n\n/head\n\n\n\n\n\nSintaxe\n\n\nseletor {\n    atributo: valor;\n}\n\np {\n    color: red;\n    font-size: 13px;\n    margin: 10px;\n}\n\n\n\n\nSeletores\n\n\nTag\n\n\nExemplo, mudar a cor de todos os par\u00e1grafos para vermelho:\n\n\np {\n     color: red;\n}\n\n\n\n\nClasse\n\n\nExemplo, mudar a cor de todos os elementos que contenham o atributo \nclass=\"destaque\"\n para vermelho:\n\n\n.destaque {\n     color: red;\n}\n\n\n\n\nExemplo, mudar a cor de todos os elementos que contenham ambas as classes 'destaque' e 'erro':\n\n\n.destaque.erro {\n     color: red;\n}\n\n\n\n\nID\n\n\nExemplo, mudar a cor apenas do elemento que cont\u00e9m o atributo \nid=\"erro\"\n para vermelho:\n\n\n#erro {\n     color: red;\n}\n\n\n\n\nAtributo\n\n\nAfeta todos os \ninput type=\"text\"\n:\n\n\ninput[type=\ntext\n] {\n    color: blue;\n}\n\n\n\n\nNOTA:\n Estilos aplicados a um elemento afetam todos os elementos filhos. Ex:\n\n\np {\n    color: red;\n}\nspan {\n    font-weight: bold;\n}\n\n\n\n\np\n Este texto \u00e9 vermelho, \nspan\nest\u00e9 \u00e9 vermelho e negrito\n/span\n.\n/p\n\n\n\n\n\nDescendentes\n\n\n/* todo \nspan\n dentro de \np\n, mesmo que descendente indireto */\np span {\n    color: red;\n}\n\n\n\n\n/* apenas \nspan\n que seja descendente direto de \np\n */\np \n span {\n    color: red;\n}\n\n\n\n\nPseudo classes\n\n\n/* ponteiro do mouse sobre o elemento */\na:hover {\n    color: red;\n}\n\n/* elemento com foco */\ninput:focus {\n    color: red;\n}\n\n/* elemento \u00e9 o primeiro filho do elemento pai */\nli:first-child {\n    color: red;\n}\n\n\n\n\nExemplo: \n04-selectors.html\n\n\nEspecificidade\n\n\nDefine a ordem de prioridade quando um elemento \u00e9 afetado por mais de uma regra.\n\n\nOrdem: inline \n id \n classe/pseudo classe/atributo \n elemento\n\n\nExemplo:\n\n\n    \n!-- 1000 --\n\n    \ndiv id=\nmyId\n\n        \np class=\nmy-class\n style=\ncolor: red\nteste\n/p\n\n    \n/div\n\n\n\n\n\n/* 0110 */\n#myId .my-class {\n    color: orange;\n}\n/* 0100 */\n#myId {\n    color: blue;\n}\n/* 0010 */\n.my-class {\n    color: green;\n}\n/* 0001 */\np {\n    color: yellow;\n}\n\n\n\n\n\n!important\n\n\nTem prioridade m\u00e1xima. N\u00e3o recomendado.\n\n\n    p {\n        color: red !important;\n    }\n\n\n\n\nUnidades\n\n\nCores:\n\n\np {\n    color: red; /* nome da cor - deprecated */\n    color: #FF0000; /* hexadecimal (red = FF, green = 00, blue = 00) */\n    color: #f00; /* hexadecimal - vers\u00e3o reduzida */\n    color: rgb(255, 0, 0); /* rgb */\n}\n\n\n\n\nMedidas:\n\n\np {\n    width: 100%; /* porcentagem em rela\u00e7\u00e3o ao elemento pai */\n    width: 500px; /* pixels */\n    width: 0; /* 0 n\u00e3o precisa de unidade */\n\n    font-size: 1.5em; /* rela\u00e7\u00e3o ao tamanho de font do elemento pai */\n}\n\n\n\n\nTextos\n\n\nFontes, tamanhos e cores:\n\n\np {\n    font-family: Arial, Helvetica, sans-serif; /* fam\u00edlia de fontes - usa a primeira da lista que encontrar */\n    font-size: 13px; /* tamanho */\n    font-weight: bold; /* bold (negrito), normal */\n    font-style: italic; /* italic, normal */\n    color: #f00; /* cor do texto*/\n    line-height: 15px; /* altura da linha */\n\n    /* forma abreviada */\n    /* weight style size/line-height family */\n    font: bold italic 13px/15px Arial, Helvetica, sans-serif;\n}\n\n\n\n\nAlinhamento:\n\n\np {\n    text-align: center; /* center, left, right, justify */\n}\n\n\n\n\nDecoration, transform:\n\n\np {\n    text-decoration: underline; /* underline, overline, line-through, none */\n    text-transform: uppercase; /* uppercase, lowercase, capitalize, none */\n}\n\n\n\n\nExemplo: \n03-texts.html\n\n\nBox Model\n\n\n\n\ndiv {\n    width: 100px; /* largura */\n    height: 100px; /* altura */\n    padding: 10px; /* espa\u00e7o entre as bordas e o conte\u00fado */\n    border: 1px solid red; /* espessura, estilo e cor das bordas */\n    margin: 5px; /* espa\u00e7o do lado de fora das bordas - pode ser nagativo */\n}\n\n\n\n\n\u00c9 poss\u00edvel definir margens, bordas e paddings diferentes em cada lado do elemento:\n\n\ndiv {\n    /***************************** padding */\n    padding-top: 1px; /* cima */\n    padding-right: 2px; /* direita */\n    padding-bottom: 3px; /* baixo */\n    padding-left: 4px; /* esquerda */\n\n    /* ou de forma abreviada: */\n    padding: 1px 2px 3px 4px; /* sentido hor\u00e1rio: cima, direita, baixo, esquerda */\n\n    /* ou ainda: */\n    padding: 5px 10px; /* cima e baixo com 5px, direita e esquerda com 10px */\n\n\n    /***************************** margin: */\n    margin-top: 1px;\n    margin-right: 2px;\n    margin-bottom: 3px;\n    margin-left: 4px;\n\n    margin: 1px 2px 3px 4px;\n\n    margin: 5px 10px;\n\n\n    /***************************** border */\n    border-top: 1px solid red;\n    border-right: 1px dotted blue;\n    border-bottom: 1px dashed green;\n    border-left: 1px double black;\n\n    border-width: 1px 2px 3px 4px;\n    border-width: 5px 10px;\n\n    border-color: red green blue black;\n    border-color: red green;\n\n    border-style: solid dashed dotted double;\n    border-style: solid dashed;\n\n    /* pode combinar lados (top, right, bottom, left) com atributo (width, style, color): */\n    border-left-color: red;\n    border-top-width: 2px;\n    border-bottom-style: solid;\n}\n\n\n\n\nExemplo: \n01-box-model.html\n\n\nbox-sizing: border-box\n\n\nAdicionando \nbox-sizing: border-box\n a largura (width) do elemento engloba padding e bordas, ao contr\u00e1rio do box model padr\u00e3o onde a largura considera apenas a \u00e1rea dentro do padding.\n\n\nExemplo: \n02-box-sizing.html\n\n\nRecomenda\u00e7\u00e3o em novos projetos: aplicar \nbox-sizing: border-box\n em todos os elementos, da seguinte forma:\n\n\nhtml {\n    box-sizing: border-box;\n}\n*, *:before, *:after {\n    box-sizing: inherit;\n}\n\n\n\n\nPaul Irish recomendando border-box\n\n\nDisplay\n\n\np {\n    display: block; /* block, inline, inline-block, none */\n}\n\n\n\n\nExemplo: \n05-display.html\n\n\nVisibilidade e opacidade\n\n\np {\n    visibility: hidden; /* elemento invis\u00edvel, mas ocupa espa\u00e7o na p\u00e1gina */\n    opacity: 0.5; /* 0 a 1 */\n}\n\n\n\n\nExemplo: \n06-visibility-opacity.html\n\n\nPosicionamento\n\n\np {\n    position: absolute; /* static (padr\u00e3o), absolute, relative, fixed */\n    float: left; /* left, right, none (padr\u00e3o) */\n}\n\n\n\n\nExemplo: \n07-position-float.html\n\n\nExerc\u00edcio\n\n\nEstilizar o HTML do exerc\u00edcio anterior (pode modificar o HTML).", 
+            "title": "CSS"
+        }, 
+        {
+            "location": "/css/#css", 
+            "text": "", 
+            "title": "CSS"
+        }, 
+        {
+            "location": "/css/#formas-de-insercao", 
+            "text": "Inline:  p style= color: red Texto em vermelho /p   Via tag  style , geralmente no  head :  head \n     style \n        p {\n            color: red;\n        }\n     /style  /head   Via arquivo separado: (Recomendado!)  head \n     link rel= stylesheet  href= style.css  /head", 
+            "title": "Formas de inser\u00e7\u00e3o"
+        }, 
+        {
+            "location": "/css/#sintaxe", 
+            "text": "seletor {\n    atributo: valor;\n}\n\np {\n    color: red;\n    font-size: 13px;\n    margin: 10px;\n}", 
+            "title": "Sintaxe"
+        }, 
+        {
+            "location": "/css/#seletores", 
+            "text": "", 
+            "title": "Seletores"
+        }, 
+        {
+            "location": "/css/#tag", 
+            "text": "Exemplo, mudar a cor de todos os par\u00e1grafos para vermelho:  p {\n     color: red;\n}", 
+            "title": "Tag"
+        }, 
+        {
+            "location": "/css/#classe", 
+            "text": "Exemplo, mudar a cor de todos os elementos que contenham o atributo  class=\"destaque\"  para vermelho:  .destaque {\n     color: red;\n}  Exemplo, mudar a cor de todos os elementos que contenham ambas as classes 'destaque' e 'erro':  .destaque.erro {\n     color: red;\n}", 
+            "title": "Classe"
+        }, 
+        {
+            "location": "/css/#id", 
+            "text": "Exemplo, mudar a cor apenas do elemento que cont\u00e9m o atributo  id=\"erro\"  para vermelho:  #erro {\n     color: red;\n}", 
+            "title": "ID"
+        }, 
+        {
+            "location": "/css/#atributo", 
+            "text": "Afeta todos os  input type=\"text\" :  input[type= text ] {\n    color: blue;\n}  NOTA:  Estilos aplicados a um elemento afetam todos os elementos filhos. Ex:  p {\n    color: red;\n}\nspan {\n    font-weight: bold;\n}  p  Este texto \u00e9 vermelho,  span est\u00e9 \u00e9 vermelho e negrito /span . /p", 
+            "title": "Atributo"
+        }, 
+        {
+            "location": "/css/#descendentes", 
+            "text": "/* todo  span  dentro de  p , mesmo que descendente indireto */\np span {\n    color: red;\n}  /* apenas  span  que seja descendente direto de  p  */\np   span {\n    color: red;\n}", 
+            "title": "Descendentes"
+        }, 
+        {
+            "location": "/css/#pseudo-classes", 
+            "text": "/* ponteiro do mouse sobre o elemento */\na:hover {\n    color: red;\n}\n\n/* elemento com foco */\ninput:focus {\n    color: red;\n}\n\n/* elemento \u00e9 o primeiro filho do elemento pai */\nli:first-child {\n    color: red;\n}  Exemplo:  04-selectors.html", 
+            "title": "Pseudo classes"
+        }, 
+        {
+            "location": "/css/#especificidade", 
+            "text": "Define a ordem de prioridade quando um elemento \u00e9 afetado por mais de uma regra.  Ordem: inline   id   classe/pseudo classe/atributo   elemento  Exemplo:       !-- 1000 -- \n     div id= myId \n         p class= my-class  style= color: red teste /p \n     /div   /* 0110 */\n#myId .my-class {\n    color: orange;\n}\n/* 0100 */\n#myId {\n    color: blue;\n}\n/* 0010 */\n.my-class {\n    color: green;\n}\n/* 0001 */\np {\n    color: yellow;\n}", 
+            "title": "Especificidade"
+        }, 
+        {
+            "location": "/css/#important", 
+            "text": "Tem prioridade m\u00e1xima. N\u00e3o recomendado.      p {\n        color: red !important;\n    }", 
+            "title": "!important"
+        }, 
+        {
+            "location": "/css/#unidades", 
+            "text": "Cores:  p {\n    color: red; /* nome da cor - deprecated */\n    color: #FF0000; /* hexadecimal (red = FF, green = 00, blue = 00) */\n    color: #f00; /* hexadecimal - vers\u00e3o reduzida */\n    color: rgb(255, 0, 0); /* rgb */\n}  Medidas:  p {\n    width: 100%; /* porcentagem em rela\u00e7\u00e3o ao elemento pai */\n    width: 500px; /* pixels */\n    width: 0; /* 0 n\u00e3o precisa de unidade */\n\n    font-size: 1.5em; /* rela\u00e7\u00e3o ao tamanho de font do elemento pai */\n}", 
+            "title": "Unidades"
+        }, 
+        {
+            "location": "/css/#textos", 
+            "text": "Fontes, tamanhos e cores:  p {\n    font-family: Arial, Helvetica, sans-serif; /* fam\u00edlia de fontes - usa a primeira da lista que encontrar */\n    font-size: 13px; /* tamanho */\n    font-weight: bold; /* bold (negrito), normal */\n    font-style: italic; /* italic, normal */\n    color: #f00; /* cor do texto*/\n    line-height: 15px; /* altura da linha */\n\n    /* forma abreviada */\n    /* weight style size/line-height family */\n    font: bold italic 13px/15px Arial, Helvetica, sans-serif;\n}  Alinhamento:  p {\n    text-align: center; /* center, left, right, justify */\n}  Decoration, transform:  p {\n    text-decoration: underline; /* underline, overline, line-through, none */\n    text-transform: uppercase; /* uppercase, lowercase, capitalize, none */\n}  Exemplo:  03-texts.html", 
+            "title": "Textos"
+        }, 
+        {
+            "location": "/css/#box-model", 
+            "text": "div {\n    width: 100px; /* largura */\n    height: 100px; /* altura */\n    padding: 10px; /* espa\u00e7o entre as bordas e o conte\u00fado */\n    border: 1px solid red; /* espessura, estilo e cor das bordas */\n    margin: 5px; /* espa\u00e7o do lado de fora das bordas - pode ser nagativo */\n}  \u00c9 poss\u00edvel definir margens, bordas e paddings diferentes em cada lado do elemento:  div {\n    /***************************** padding */\n    padding-top: 1px; /* cima */\n    padding-right: 2px; /* direita */\n    padding-bottom: 3px; /* baixo */\n    padding-left: 4px; /* esquerda */\n\n    /* ou de forma abreviada: */\n    padding: 1px 2px 3px 4px; /* sentido hor\u00e1rio: cima, direita, baixo, esquerda */\n\n    /* ou ainda: */\n    padding: 5px 10px; /* cima e baixo com 5px, direita e esquerda com 10px */\n\n\n    /***************************** margin: */\n    margin-top: 1px;\n    margin-right: 2px;\n    margin-bottom: 3px;\n    margin-left: 4px;\n\n    margin: 1px 2px 3px 4px;\n\n    margin: 5px 10px;\n\n\n    /***************************** border */\n    border-top: 1px solid red;\n    border-right: 1px dotted blue;\n    border-bottom: 1px dashed green;\n    border-left: 1px double black;\n\n    border-width: 1px 2px 3px 4px;\n    border-width: 5px 10px;\n\n    border-color: red green blue black;\n    border-color: red green;\n\n    border-style: solid dashed dotted double;\n    border-style: solid dashed;\n\n    /* pode combinar lados (top, right, bottom, left) com atributo (width, style, color): */\n    border-left-color: red;\n    border-top-width: 2px;\n    border-bottom-style: solid;\n}  Exemplo:  01-box-model.html", 
+            "title": "Box Model"
+        }, 
+        {
+            "location": "/css/#box-sizing-border-box", 
+            "text": "Adicionando  box-sizing: border-box  a largura (width) do elemento engloba padding e bordas, ao contr\u00e1rio do box model padr\u00e3o onde a largura considera apenas a \u00e1rea dentro do padding.  Exemplo:  02-box-sizing.html  Recomenda\u00e7\u00e3o em novos projetos: aplicar  box-sizing: border-box  em todos os elementos, da seguinte forma:  html {\n    box-sizing: border-box;\n}\n*, *:before, *:after {\n    box-sizing: inherit;\n}  Paul Irish recomendando border-box", 
+            "title": "box-sizing: border-box"
+        }, 
+        {
+            "location": "/css/#display", 
+            "text": "p {\n    display: block; /* block, inline, inline-block, none */\n}  Exemplo:  05-display.html", 
+            "title": "Display"
+        }, 
+        {
+            "location": "/css/#visibilidade-e-opacidade", 
+            "text": "p {\n    visibility: hidden; /* elemento invis\u00edvel, mas ocupa espa\u00e7o na p\u00e1gina */\n    opacity: 0.5; /* 0 a 1 */\n}  Exemplo:  06-visibility-opacity.html", 
+            "title": "Visibilidade e opacidade"
+        }, 
+        {
+            "location": "/css/#posicionamento", 
+            "text": "p {\n    position: absolute; /* static (padr\u00e3o), absolute, relative, fixed */\n    float: left; /* left, right, none (padr\u00e3o) */\n}  Exemplo:  07-position-float.html", 
+            "title": "Posicionamento"
+        }, 
+        {
+            "location": "/css/#exercicio", 
+            "text": "Estilizar o HTML do exerc\u00edcio anterior (pode modificar o HTML).", 
             "title": "Exerc\u00edcio"
         }, 
         {
@@ -134,91 +239,6 @@
             "location": "/html5/#novos-tipos-de-campos", 
             "text": "", 
             "title": "Novos tipos de campos"
-        }, 
-        {
-            "location": "/css/", 
-            "text": "CSS\n\n\nFormas de inser\u00e7\u00e3o\n\n\nInline:\n\n\np style=\ncolor: red\nTexto em vermelho\n/p\n\n\n\n\n\nVia tag \nstyle\n, geralmente no \nhead\n:\n\n\nhead\n\n    \nstyle\n\n        p {\n            color: red;\n        }\n    \n/style\n\n\n/head\n\n\n\n\n\nVia arquivo separado: (Recomendado!)\n\n\nhead\n\n    \nlink rel=\nstylesheet\n href=\nstyle.css\n\n\n/head\n\n\n\n\n\nSintaxe\n\n\nseletor {\n    atributo: valor;\n}\n\np {\n    color: red;\n    font-size: 13px;\n    margin: 10px;\n}\n\n\n\n\nSeletores\n\n\nTag\n\n\nExemplo, mudar a cor de todos os par\u00e1grafos para vermelho:\n\n\np {\n     color: red;\n}\n\n\n\n\nClasse\n\n\nExemplo, mudar a cor de todos os elementos que contenham o atributo \nclass=\"destaque\"\n para vermelho:\n\n\n.destaque {\n     color: red;\n}\n\n\n\n\nExemplo, mudar a cor de todos os elementos que contenham ambas as classes 'destaque' e 'erro':\n\n\n.destaque.erro {\n     color: red;\n}\n\n\n\n\nID\n\n\nExemplo, mudar a cor apenas do elemento que cont\u00e9m o atributo \nid=\"erro\"\n para vermelho:\n\n\n#erro {\n     color: red;\n}\n\n\n\n\nAtributo\n\n\nAfeta todos os \ninput type=\"text\"\n:\n\n\ninput[type=\ntext\n] {\n    color: blue;\n}\n\n\n\n\nNOTA:\n Estilos aplicados a um elemento afetam todos os elementos filhos. Ex:\n\n\np {\n    color: red;\n}\nspan {\n    font-weight: bold;\n}\n\n\n\n\np\n Este texto \u00e9 vermelho, \nspan\nest\u00e9 \u00e9 vermelho e negrito\n/span\n.\n/p\n\n\n\n\n\nUnidades\n\n\ncores (name, hex, rgb, rgba)\nmedidas: px, %, em\n\n\nTextos\n\n\nFontes, tamanhos e cores:\n\n\np {\n    font-family: Arial, Helvetica, sans-serif; /* fam\u00edlia de fontes - usa a primeira da lista que encontrar */\n    font-size: 13px; /* tamanho */\n    font-weight: bold; /* bold (negrito), normal */\n    font-style: italic; /* italic, normal */\n    color: #f00; /* cor do texto*/\n    line-height: 15px; /* altura da linha */\n\n    /* forma abreviada */\n    /* weight style size/line-height family */\n    font: bold italic 13px/15px Arial, Helvetica, sans-serif;\n}\n\n\n\n\nAlinhamento:\n\n\np {\n    text-align: center; /* center, left, right, justify */\n}\n\n\n\n\nDecoration, transform:\n\n\np {\n    text-decoration: underline; /* underline, overline, line-through, none */\n    text-transform: uppercase; /* uppercase, lowercase, capitalize, none */\n}\n\n\n\n\nExemplo: \n03-texts.html\n\n\nDisplay\n\n\nblock, inline, inline-block, none, visibility, opacity\n\n\nBox Model\n\n\n\n\ndiv {\n    width: 100px; /* largura */\n    height: 100px; /* altura */\n    padding: 10px; /* espa\u00e7o entre as bordas e o conte\u00fado */\n    border: 1px solid red; /* espessura, estilo e cor das bordas */\n    margin: 5px; /* espa\u00e7o do lado de fora das bordas */\n}\n\n\n\n\nExemplo: \n01-box-model.html\n\n\n\u00c9 poss\u00edvel definir margens, bordas e paddings diferentes em cada lado do elemento:\n\n\ndiv {\n    /***************************** padding */\n    padding-top: 1px; /* cima */\n    padding-right: 2px; /* direita */\n    padding-bottom: 3px; /* baixo */\n    padding-left: 4px; /* esquerda */\n\n    /* ou de forma abreviada: */\n    padding: 1px 2px 3px 4px; /* sentido hor\u00e1rio: cima, direita, baixo, esquerda */\n\n    /* ou ainda: */\n    padding: 5px 10px; /* cima e baixo com 5px, direita e esquerda com 10px */\n\n\n    /***************************** margin: */\n    margin-top: 1px;\n    margin-right: 2px;\n    margin-bottom: 3px;\n    margin-left: 4px;\n\n    margin: 1px 2px 3px 4px;\n\n    margin: 5px 10px;\n\n\n    /***************************** border */\n    border-top: 1px solid red;\n    border-right: 1px dotted blue;\n    border-bottom: 1px dashed green;\n    border-left: 1px double black;\n\n    border-width: 1px 2px 3px 4px;\n    border-width: 5px 10px;\n\n    border-color: red green blue black;\n    border-color: red green;\n\n    border-style: solid dashed dotted double;\n    border-style: solid dashed;\n\n    /* pode combinar lados (top, right, bottom, left) com atributo (width, style, color): */\n    border-left-color: red;\n    border-top-width: 2px;\n    border-bottom-style: solid;\n}\n\n\n\n\nbox-sizing: border-box\n\n\nAdicionando \nbox-sizing: border-box\n a largura (width) do elemento engloba padding e bordas, ao contr\u00e1rio do box model padr\u00e3o onde a largura considera apenas a \u00e1rea dentro do padding.\n\n\nExemplo: \n02-box-sizing.html\n\n\nRecomenda\u00e7\u00e3o em novos projetos: aplicar \nbox-sizing: border-box\n em todos os elementos, da seguinte forma:\n\n\nhtml {\n    box-sizing: border-box;\n}\n*, *:before, *:after {\n    box-sizing: inherit;\n}\n\n\n\n\nPaul Irish recomendando border-box\n\n\nPosicionamento\n\n\nposition, float\n\n\nPseudo classes\n\n\nhover, focus, active\n\n\nExerc\u00edcio\n\n\nEstilizar o HTML do exerc\u00edcio anterior (pode modificar o HTML).", 
-            "title": "CSS"
-        }, 
-        {
-            "location": "/css/#css", 
-            "text": "", 
-            "title": "CSS"
-        }, 
-        {
-            "location": "/css/#formas-de-insercao", 
-            "text": "Inline:  p style= color: red Texto em vermelho /p   Via tag  style , geralmente no  head :  head \n     style \n        p {\n            color: red;\n        }\n     /style  /head   Via arquivo separado: (Recomendado!)  head \n     link rel= stylesheet  href= style.css  /head", 
-            "title": "Formas de inser\u00e7\u00e3o"
-        }, 
-        {
-            "location": "/css/#sintaxe", 
-            "text": "seletor {\n    atributo: valor;\n}\n\np {\n    color: red;\n    font-size: 13px;\n    margin: 10px;\n}", 
-            "title": "Sintaxe"
-        }, 
-        {
-            "location": "/css/#seletores", 
-            "text": "", 
-            "title": "Seletores"
-        }, 
-        {
-            "location": "/css/#tag", 
-            "text": "Exemplo, mudar a cor de todos os par\u00e1grafos para vermelho:  p {\n     color: red;\n}", 
-            "title": "Tag"
-        }, 
-        {
-            "location": "/css/#classe", 
-            "text": "Exemplo, mudar a cor de todos os elementos que contenham o atributo  class=\"destaque\"  para vermelho:  .destaque {\n     color: red;\n}  Exemplo, mudar a cor de todos os elementos que contenham ambas as classes 'destaque' e 'erro':  .destaque.erro {\n     color: red;\n}", 
-            "title": "Classe"
-        }, 
-        {
-            "location": "/css/#id", 
-            "text": "Exemplo, mudar a cor apenas do elemento que cont\u00e9m o atributo  id=\"erro\"  para vermelho:  #erro {\n     color: red;\n}", 
-            "title": "ID"
-        }, 
-        {
-            "location": "/css/#atributo", 
-            "text": "Afeta todos os  input type=\"text\" :  input[type= text ] {\n    color: blue;\n}  NOTA:  Estilos aplicados a um elemento afetam todos os elementos filhos. Ex:  p {\n    color: red;\n}\nspan {\n    font-weight: bold;\n}  p  Este texto \u00e9 vermelho,  span est\u00e9 \u00e9 vermelho e negrito /span . /p", 
-            "title": "Atributo"
-        }, 
-        {
-            "location": "/css/#unidades", 
-            "text": "cores (name, hex, rgb, rgba)\nmedidas: px, %, em", 
-            "title": "Unidades"
-        }, 
-        {
-            "location": "/css/#textos", 
-            "text": "Fontes, tamanhos e cores:  p {\n    font-family: Arial, Helvetica, sans-serif; /* fam\u00edlia de fontes - usa a primeira da lista que encontrar */\n    font-size: 13px; /* tamanho */\n    font-weight: bold; /* bold (negrito), normal */\n    font-style: italic; /* italic, normal */\n    color: #f00; /* cor do texto*/\n    line-height: 15px; /* altura da linha */\n\n    /* forma abreviada */\n    /* weight style size/line-height family */\n    font: bold italic 13px/15px Arial, Helvetica, sans-serif;\n}  Alinhamento:  p {\n    text-align: center; /* center, left, right, justify */\n}  Decoration, transform:  p {\n    text-decoration: underline; /* underline, overline, line-through, none */\n    text-transform: uppercase; /* uppercase, lowercase, capitalize, none */\n}  Exemplo:  03-texts.html", 
-            "title": "Textos"
-        }, 
-        {
-            "location": "/css/#display", 
-            "text": "block, inline, inline-block, none, visibility, opacity", 
-            "title": "Display"
-        }, 
-        {
-            "location": "/css/#box-model", 
-            "text": "div {\n    width: 100px; /* largura */\n    height: 100px; /* altura */\n    padding: 10px; /* espa\u00e7o entre as bordas e o conte\u00fado */\n    border: 1px solid red; /* espessura, estilo e cor das bordas */\n    margin: 5px; /* espa\u00e7o do lado de fora das bordas */\n}  Exemplo:  01-box-model.html  \u00c9 poss\u00edvel definir margens, bordas e paddings diferentes em cada lado do elemento:  div {\n    /***************************** padding */\n    padding-top: 1px; /* cima */\n    padding-right: 2px; /* direita */\n    padding-bottom: 3px; /* baixo */\n    padding-left: 4px; /* esquerda */\n\n    /* ou de forma abreviada: */\n    padding: 1px 2px 3px 4px; /* sentido hor\u00e1rio: cima, direita, baixo, esquerda */\n\n    /* ou ainda: */\n    padding: 5px 10px; /* cima e baixo com 5px, direita e esquerda com 10px */\n\n\n    /***************************** margin: */\n    margin-top: 1px;\n    margin-right: 2px;\n    margin-bottom: 3px;\n    margin-left: 4px;\n\n    margin: 1px 2px 3px 4px;\n\n    margin: 5px 10px;\n\n\n    /***************************** border */\n    border-top: 1px solid red;\n    border-right: 1px dotted blue;\n    border-bottom: 1px dashed green;\n    border-left: 1px double black;\n\n    border-width: 1px 2px 3px 4px;\n    border-width: 5px 10px;\n\n    border-color: red green blue black;\n    border-color: red green;\n\n    border-style: solid dashed dotted double;\n    border-style: solid dashed;\n\n    /* pode combinar lados (top, right, bottom, left) com atributo (width, style, color): */\n    border-left-color: red;\n    border-top-width: 2px;\n    border-bottom-style: solid;\n}", 
-            "title": "Box Model"
-        }, 
-        {
-            "location": "/css/#box-sizing-border-box", 
-            "text": "Adicionando  box-sizing: border-box  a largura (width) do elemento engloba padding e bordas, ao contr\u00e1rio do box model padr\u00e3o onde a largura considera apenas a \u00e1rea dentro do padding.  Exemplo:  02-box-sizing.html  Recomenda\u00e7\u00e3o em novos projetos: aplicar  box-sizing: border-box  em todos os elementos, da seguinte forma:  html {\n    box-sizing: border-box;\n}\n*, *:before, *:after {\n    box-sizing: inherit;\n}  Paul Irish recomendando border-box", 
-            "title": "box-sizing: border-box"
-        }, 
-        {
-            "location": "/css/#posicionamento", 
-            "text": "position, float", 
-            "title": "Posicionamento"
-        }, 
-        {
-            "location": "/css/#pseudo-classes", 
-            "text": "hover, focus, active", 
-            "title": "Pseudo classes"
-        }, 
-        {
-            "location": "/css/#exercicio", 
-            "text": "Estilizar o HTML do exerc\u00edcio anterior (pode modificar o HTML).", 
-            "title": "Exerc\u00edcio"
         }, 
         {
             "location": "/css3/", 

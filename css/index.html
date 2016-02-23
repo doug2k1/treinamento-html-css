@@ -24,7 +24,7 @@
   <script>
     // Current page data
     var mkdocs_page_name = "CSS";
-    var mkdocs_page_input_path = "css/index.md";
+    var mkdocs_page_input_path = "css\index.md";
     var mkdocs_page_url = "/css/";
   </script>
   
@@ -69,13 +69,6 @@
 <li>
           
             <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../html5/">HTML5</a>
-        
-    </li>
-<li>
-          
-            <li>
     <li class="toctree-l1 current">
         <a class="current" href="./">CSS</a>
         
@@ -89,24 +82,35 @@
                 
                     <li><a class="toctree-l4" href="#seletores">Seletores</a></li>
                 
+                    <li><a class="toctree-l4" href="#especificidade">Especificidade</a></li>
+                
+                    <li><a class="toctree-l4" href="#important">!important</a></li>
+                
                     <li><a class="toctree-l4" href="#unidades">Unidades</a></li>
                 
                     <li><a class="toctree-l4" href="#textos">Textos</a></li>
-                
-                    <li><a class="toctree-l4" href="#display">Display</a></li>
                 
                     <li><a class="toctree-l4" href="#box-model">Box Model</a></li>
                 
                     <li><a class="toctree-l4" href="#box-sizing-border-box">box-sizing: border-box</a></li>
                 
-                    <li><a class="toctree-l4" href="#posicionamento">Posicionamento</a></li>
+                    <li><a class="toctree-l4" href="#display">Display</a></li>
                 
-                    <li><a class="toctree-l4" href="#pseudo-classes">Pseudo classes</a></li>
+                    <li><a class="toctree-l4" href="#visibilidade-e-opacidade">Visibilidade e opacidade</a></li>
+                
+                    <li><a class="toctree-l4" href="#posicionamento">Posicionamento</a></li>
                 
                     <li><a class="toctree-l4" href="#exercicio">Exercício</a></li>
                 
             
             </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../html5/">HTML5</a>
         
     </li>
 <li>
@@ -238,9 +242,93 @@ span {
 <pre><code class="html">&lt;p&gt; Este texto é vermelho, &lt;span&gt;esté é vermelho e negrito&lt;/span&gt;.&lt;/p&gt;
 </code></pre>
 
+<h3 id="descendentes">Descendentes</h3>
+<pre><code class="css">/* todo &lt;span&gt; dentro de &lt;p&gt;, mesmo que descendente indireto */
+p span {
+    color: red;
+}
+</code></pre>
+
+<pre><code class="css">/* apenas &lt;span&gt; que seja descendente direto de &lt;p&gt; */
+p &gt; span {
+    color: red;
+}
+</code></pre>
+
+<h3 id="pseudo-classes">Pseudo classes</h3>
+<pre><code class="css">/* ponteiro do mouse sobre o elemento */
+a:hover {
+    color: red;
+}
+
+/* elemento com foco */
+input:focus {
+    color: red;
+}
+
+/* elemento é o primeiro filho do elemento pai */
+li:first-child {
+    color: red;
+}
+</code></pre>
+
+<p>Exemplo: <a href="../css/examples/04-selectors.html">04-selectors.html</a></p>
+<h2 id="especificidade">Especificidade</h2>
+<p>Define a ordem de prioridade quando um elemento é afetado por mais de uma regra.</p>
+<p>Ordem: inline &gt; id &gt; classe/pseudo classe/atributo &gt; elemento</p>
+<p>Exemplo:</p>
+<pre><code class="html">    &lt;!-- 1000 --&gt;
+    &lt;div id=&quot;myId&quot;&gt;
+        &lt;p class=&quot;my-class&quot; style=&quot;color: red&quot;&gt;teste&lt;/p&gt;
+    &lt;/div&gt;
+</code></pre>
+
+<pre><code class="css">/* 0110 */
+#myId .my-class {
+    color: orange;
+}
+/* 0100 */
+#myId {
+    color: blue;
+}
+/* 0010 */
+.my-class {
+    color: green;
+}
+/* 0001 */
+p {
+    color: yellow;
+}
+
+</code></pre>
+
+<h2 id="important">!important</h2>
+<p>Tem prioridade máxima. Não recomendado.</p>
+<pre><code class="css">    p {
+        color: red !important;
+    }
+</code></pre>
+
 <h2 id="unidades">Unidades</h2>
-<p>cores (name, hex, rgb, rgba)
-medidas: px, %, em</p>
+<p>Cores:</p>
+<pre><code class="css">p {
+    color: red; /* nome da cor - deprecated */
+    color: #FF0000; /* hexadecimal (red = FF, green = 00, blue = 00) */
+    color: #f00; /* hexadecimal - versão reduzida */
+    color: rgb(255, 0, 0); /* rgb */
+}
+</code></pre>
+
+<p>Medidas:</p>
+<pre><code class="css">p {
+    width: 100%; /* porcentagem em relação ao elemento pai */
+    width: 500px; /* pixels */
+    width: 0; /* 0 não precisa de unidade */
+
+    font-size: 1.5em; /* relação ao tamanho de font do elemento pai */
+}
+</code></pre>
+
 <h2 id="textos">Textos</h2>
 <p>Fontes, tamanhos e cores:</p>
 <pre><code class="css">p {
@@ -271,8 +359,6 @@ medidas: px, %, em</p>
 </code></pre>
 
 <p>Exemplo: <a href="../css/examples/03-texts.html">03-texts.html</a></p>
-<h2 id="display">Display</h2>
-<p>block, inline, inline-block, none, visibility, opacity</p>
 <h2 id="box-model">Box Model</h2>
 <p><img alt="ilustração box model" src="../css/css_box_model.gif" title="" /></p>
 <pre><code class="css">div {
@@ -280,11 +366,10 @@ medidas: px, %, em</p>
     height: 100px; /* altura */
     padding: 10px; /* espaço entre as bordas e o conteúdo */
     border: 1px solid red; /* espessura, estilo e cor das bordas */
-    margin: 5px; /* espaço do lado de fora das bordas */
+    margin: 5px; /* espaço do lado de fora das bordas - pode ser nagativo */
 }
 </code></pre>
 
-<p>Exemplo: <a href="../css/examples/01-box-model.html">01-box-model.html</a></p>
 <p>É possível definir margens, bordas e paddings diferentes em cada lado do elemento:</p>
 <pre><code class="css">div {
     /***************************** padding */
@@ -333,6 +418,7 @@ medidas: px, %, em</p>
 }
 </code></pre>
 
+<p>Exemplo: <a href="../css/examples/01-box-model.html">01-box-model.html</a></p>
 <h2 id="box-sizing-border-box">box-sizing: border-box</h2>
 <p>Adicionando <code>box-sizing: border-box</code> a largura (width) do elemento engloba padding e bordas, ao contrário do box model padrão onde a largura considera apenas a área dentro do padding.</p>
 <p>Exemplo: <a href="../css/examples/02-box-sizing.html">02-box-sizing.html</a></p>
@@ -346,10 +432,29 @@ medidas: px, %, em</p>
 </code></pre>
 
 <p><a href="http://www.paulirish.com/2012/box-sizing-border-box-ftw/">Paul Irish recomendando border-box</a></p>
+<h2 id="display">Display</h2>
+<pre><code class="css">p {
+    display: block; /* block, inline, inline-block, none */
+}
+</code></pre>
+
+<p>Exemplo: <a href="../css/examples/05-display.html">05-display.html</a></p>
+<h2 id="visibilidade-e-opacidade">Visibilidade e opacidade</h2>
+<pre><code class="css">p {
+    visibility: hidden; /* elemento invisível, mas ocupa espaço na página */
+    opacity: 0.5; /* 0 a 1 */
+}
+</code></pre>
+
+<p>Exemplo: <a href="../css/examples/06-visibility-opacity.html">06-visibility-opacity.html</a></p>
 <h2 id="posicionamento">Posicionamento</h2>
-<p>position, float</p>
-<h2 id="pseudo-classes">Pseudo classes</h2>
-<p>hover, focus, active</p>
+<pre><code class="css">p {
+    position: absolute; /* static (padrão), absolute, relative, fixed */
+    float: left; /* left, right, none (padrão) */
+}
+</code></pre>
+
+<p>Exemplo: <a href="../css/examples/07-position-float.html">07-position-float.html</a></p>
 <h2 id="exercicio">Exercício</h2>
 <p>Estilizar o HTML do exercício anterior (pode modificar o HTML).</p>
               
@@ -359,10 +464,10 @@ medidas: px, %, em</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../css3/" class="btn btn-neutral float-right" title="CSS3">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../html5/" class="btn btn-neutral float-right" title="HTML5">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../html5/" class="btn btn-neutral" title="HTML5"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../html/" class="btn btn-neutral" title="HTML"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -388,10 +493,10 @@ medidas: px, %, em</p>
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../html5/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../html/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../css3/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../html5/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
