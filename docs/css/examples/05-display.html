@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Display</title>
+    <style>
+        div {
+            background-color: #fc0;
+            padding: 50px;
+        }
+        span, a {
+            font-weight: bold;
+        }
+        .inline-links a {
+            background-color: #fc0;
+            display: inline-block;
+            height: 60px;
+            width: 200px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div>div por padrão é block</div>
+
+    <p><span>span</span> e <a href="">links</a> por padrão são inline</p>
+
+    <p class="inline-links">inline-block aceitam largura e altura, como estes links:
+        <a href="">link inline-block</a>
+        <a href="">outro link</a>. É quase igual block, mas não ocupa toda a largura.
+    </p>
+
+    <p class="hidden">display:none é como se o elemento não existisse.</p>
+</body>
+</html>

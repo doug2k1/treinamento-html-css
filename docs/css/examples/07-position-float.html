@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS position and float</title>
+    <style>
+        div {
+            background-color: #fc0;
+            width: 300px;
+            height: 100px;
+            left: 0;
+            top: 0;
+        }
+        .fixed {
+            background-color: #ccc;
+            position: fixed;
+            z-index: 2;
+        }
+        .absolute {
+            position: absolute;
+            left: auto;
+            right: 0;
+            top: 300px;
+        }
+        .relative {
+            color: white;
+            background-color: blue;
+            position: relative;
+            top: 200px;
+            left: 200px;
+        }
+        .relative .absolute {
+            color: #000;
+            top: 80px;
+            right: auto;
+            left: -50px;
+        }
+        .fl {
+            background-color: orange;
+            float: left;
+            padding: 10px;
+            width: 100px;
+        }
+        .fr {
+            background-color: orange;
+            float: right;
+            padding: 10px;
+            width: 100px;
+        }
+
+        p {
+            background-color: #eee;
+            margin: 0;
+            padding-bottom: 500px;
+        }
+        .with-float {
+            background-color: #fc9;
+            margin-bottom: 10px;
+            padding: 10px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="fixed">
+        position: fixed <br>
+        Fixo no viewport, mesmo com scroll. Sai do fluxo da página.
+    </div>
+    <div class="absolute">
+        position: absolute (pai: <body>)<br>
+        Se posiciona em relação do pai mais próximo que seja relative ou absolute. Sai do fluxo da página.
+    </div>
+
+    <div class="relative">
+        position: relative <br>
+        Se posiciona em relação à própria posição original. Continua ocupando o espaço original.
+
+        <div class="absolute">
+            position: absolute (pai: div relative)<br>
+            Se posiciona em relação do pai mais próximo que seja relative ou absolute. Sai do fluxo da página.
+        </div>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur saepe, minus voluptatibus hic aut sit atque excepturi corporis non debitis nam ipsa voluptatum porro. Ab atque fugiat qui magni dignissimos!</p>
+    <p class="with-float">
+        <span class="fl">
+            float: left <br>
+            Elemento vai para a esquerda. Elemento com float automaticamente vira block.
+        </span>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur saepe, minus voluptatibus hic aut sit atque excepturi corporis non debitis nam ipsa voluptatum porro. Ab atque fugiat qui magni dignissimos!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur saepe, minus voluptatibus hic aut sit atque excepturi corporis non debitis nam ipsa voluptatum porro. Ab atque fugiat qui magni dignissimos!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur saepe, minus voluptatibus hic aut sit atque excepturi corporis non debitis nam ipsa voluptatum porro. Ab atque fugiat qui magni dignissimos!
+    </p>
+    <p class="with-float">
+        <span class="fr">
+            float: right <br>
+            Elemento vai para a direita. Elemento com float automaticamente vira block.
+        </span>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur saepe, minus voluptatibus hic aut sit atque excepturi corporis non debitis nam ipsa voluptatum porro. Ab atque fugiat qui magni dignissimos!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur saepe, minus voluptatibus hic aut sit atque excepturi corporis non debitis nam ipsa voluptatum porro. Ab atque fugiat qui magni dignissimos!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur saepe, minus voluptatibus hic aut sit atque excepturi corporis non debitis nam ipsa voluptatum porro. Ab atque fugiat qui magni dignissimos!
+    </p>
+
+
+
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur saepe, minus voluptatibus hic aut sit atque excepturi corporis non debitis nam ipsa voluptatum porro. Ab atque fugiat qui magni dignissimos!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur saepe, minus voluptatibus hic aut sit atque excepturi corporis non debitis nam ipsa voluptatum porro. Ab atque fugiat qui magni dignissimos!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur saepe, minus voluptatibus hic aut sit atque excepturi corporis non debitis nam ipsa voluptatum porro. Ab atque fugiat qui magni dignissimos!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur saepe, minus voluptatibus hic aut sit atque excepturi corporis non debitis nam ipsa voluptatum porro. Ab atque fugiat qui magni dignissimos!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur saepe, minus voluptatibus hic aut sit atque excepturi corporis non debitis nam ipsa voluptatum porro. Ab atque fugiat qui magni dignissimos!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur saepe, minus voluptatibus hic aut sit atque excepturi corporis non debitis nam ipsa voluptatum porro. Ab atque fugiat qui magni dignissimos!</p>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selectors</title>
+    <style>
+    #nav .intro span {
+        color: red;
+    }
+    #nav span {
+        font-weight: bold;
+    }
+    #nav > span {
+        color: blue;
+    }
+
+    a:hover {
+        color: green;
+    }
+    input:focus {
+        background-color: #ccc;
+    }
+    li:first-child {
+        font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+    <p>Id, classes, descendentes</p>
+
+    <div id="nav">
+        <span>Menu</span>
+        <p class="intro">Lorem <span>ipsum</span> dolor sit amet.</p>
+        <p>Lorem <span>ipsum</span> dolor sit amet.</p>
+        <p>Lorem <span>ipsum</span> dolor sit amet.</p>
+    </div>
+
+    <p>Pseudo classes</p>
+
+    <a href="">Link 1</a>
+    <a href="">Link 2</a>
+    <a href="">Link 3</a>
+
+    <input type="text" name="" id="">
+
+    <ul>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+    </ul>
+</body>
+</html>

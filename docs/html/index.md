@@ -180,6 +180,13 @@ Exemplo: [05-forms.html](/html/examples/05-forms.html)
 
 ## Atributos class e id
 
+Classifica e identifica elementos. `id` deve ser único na página. `class` pode se repetir e é muito usado para estilizar os elementos com CSS.
+
+```html
+    <div id="header">
+        <a class="nav-link" href="/">Home</a>
+    </div>
+```
 
 ## Exercício
 

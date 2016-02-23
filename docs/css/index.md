@@ -106,10 +106,112 @@ span {
 <p> Este texto é vermelho, <span>esté é vermelho e negrito</span>.</p>
 ```
 
+### Descendentes
+
+```css
+/* todo <span> dentro de <p>, mesmo que descendente indireto */
+p span {
+    color: red;
+}
+```
+
+```css
+/* apenas <span> que seja descendente direto de <p> */
+p > span {
+    color: red;
+}
+```
+
+### Pseudo classes
+
+```css
+/* ponteiro do mouse sobre o elemento */
+a:hover {
+    color: red;
+}
+
+/* elemento com foco */
+input:focus {
+    color: red;
+}
+
+/* elemento é o primeiro filho do elemento pai */
+li:first-child {
+    color: red;
+}
+```
+
+Exemplo: [04-selectors.html](/css/examples/04-selectors.html)
+
+## Especificidade
+
+Define a ordem de prioridade quando um elemento é afetado por mais de uma regra.
+
+Ordem: inline > id > classe/pseudo classe/atributo > elemento
+
+Exemplo:
+
+```html
+    <!-- 1000 -->
+    <div id="myId">
+        <p class="my-class" style="color: red">teste</p>
+    </div>
+```
+
+```css
+/* 0110 */
+#myId .my-class {
+    color: orange;
+}
+/* 0100 */
+#myId {
+    color: blue;
+}
+/* 0010 */
+.my-class {
+    color: green;
+}
+/* 0001 */
+p {
+    color: yellow;
+}
+
+```
+
+## !important
+
+Tem prioridade máxima. Não recomendado.
+
+```css
+    p {
+        color: red !important;
+    }
+```
+
 ## Unidades
 
-cores (name, hex, rgb, rgba)
-medidas: px, %, em
+Cores:
+
+```css
+p {
+    color: red; /* nome da cor - deprecated */
+    color: #FF0000; /* hexadecimal (red = FF, green = 00, blue = 00) */
+    color: #f00; /* hexadecimal - versão reduzida */
+    color: rgb(255, 0, 0); /* rgb */
+}
+```
+
+Medidas:
+
+```css
+p {
+    width: 100%; /* porcentagem em relação ao elemento pai */
+    width: 500px; /* pixels */
+    width: 0; /* 0 não precisa de unidade */
+
+    font-size: 1.5em; /* relação ao tamanho de font do elemento pai */
+}
+```
 
 ## Textos
 
@@ -148,10 +250,6 @@ p {
 ```
 Exemplo: [03-texts.html](/css/examples/03-texts.html)
 
-## Display
-
-block, inline, inline-block, none, visibility, opacity
-
 ## Box Model
 
 ![ilustração box model](/css/css_box_model.gif "")
@@ -162,11 +260,9 @@ div {
     height: 100px; /* altura */
     padding: 10px; /* espaço entre as bordas e o conteúdo */
     border: 1px solid red; /* espessura, estilo e cor das bordas */
-    margin: 5px; /* espaço do lado de fora das bordas */
+    margin: 5px; /* espaço do lado de fora das bordas - pode ser nagativo */
 }
 ```
-
-Exemplo: [01-box-model.html](/css/examples/01-box-model.html)
 
 É possível definir margens, bordas e paddings diferentes em cada lado do elemento:
 
@@ -218,6 +314,8 @@ div {
 }
 ```
 
+Exemplo: [01-box-model.html](/css/examples/01-box-model.html)
+
 ## box-sizing: border-box
 
 Adicionando `box-sizing: border-box` a largura (width) do elemento engloba padding e bordas, ao contrário do box model padrão onde a largura considera apenas a área dentro do padding.
@@ -237,13 +335,37 @@ html {
 
 [Paul Irish recomendando border-box](http://www.paulirish.com/2012/box-sizing-border-box-ftw/)
 
+## Display
+
+```css
+p {
+    display: block; /* block, inline, inline-block, none */
+}
+```
+
+Exemplo: [05-display.html](/css/examples/05-display.html)
+
+## Visibilidade e opacidade
+
+```css
+p {
+    visibility: hidden; /* elemento invisível, mas ocupa espaço na página */
+    opacity: 0.5; /* 0 a 1 */
+}
+```
+
+Exemplo: [06-visibility-opacity.html](/css/examples/06-visibility-opacity.html)
+
 ## Posicionamento
 
-position, float
+```css
+p {
+    position: absolute; /* static (padrão), absolute, relative, fixed */
+    float: left; /* left, right, none (padrão) */
+}
+```
 
-## Pseudo classes
-
-hover, focus, active
+Exemplo: [07-position-float.html](/css/examples/07-position-float.html)
 
 ## Exercício
 
