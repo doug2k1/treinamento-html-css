@@ -152,10 +152,10 @@ Ordem: inline > id > classe/pseudo classe/atributo > elemento
 Exemplo:
 
 ```html
-    <!-- 1000 -->
-    <div id="myId">
-        <p class="my-class" style="color: red">teste</p>
-    </div>
+<!-- 1000 -->
+<div id="myId">
+    <p class="my-class" style="color: red">teste</p>
+</div>
 ```
 
 ```css
