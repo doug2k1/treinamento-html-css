@@ -1,5 +1,6 @@
 site_name: Treinamento HTML & CSS
 theme: readthedocs
+extra_css: []
 pages:
 - Home: index.md
 - HTML: html/index.md
