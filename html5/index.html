@@ -24,7 +24,7 @@
   <script>
     // Current page data
     var mkdocs_page_name = "HTML5";
-    var mkdocs_page_input_path = "html5/index.md";
+    var mkdocs_page_input_path = "html5\index.md";
     var mkdocs_page_url = "/html5/";
   </script>
   
@@ -150,11 +150,61 @@
 <p>Verificar compatibilidade de navegadores no site <a href="http://caniuse.com">Can I use</a>.
 Exemplo de busca no Google: "caniuse html5 tags"</p>
 <h2 id="tags-semanticas">Tags semânticas</h2>
+<pre><code class="html">&lt;header&gt;
+    [cabeçalho]
+    &lt;nav&gt;[navegação]&lt;/nav&gt;
+&lt;/header&gt;
+&lt;main&gt;
+    &lt;section&gt;...&lt;/section&gt;
+    &lt;article&gt;...&lt;/article&gt;
+&lt;/main&gt;
+&lt;footer&gt;[rodapé]&lt;/footer&gt;
+</code></pre>
+
 <h2 id="video">Vídeo</h2>
+<pre><code class="html">&lt;video src=&quot;video.mp4&quot;&gt;
+    Seu navegador não suporta vídeo HTML5
+&lt;/video&gt;
+
+&lt;video poster=&quot;poster.png&quot; autoplay loop controls&gt;
+    &lt;source src=&quot;video.mp4&quot; type=&quot;video/mp4&quot;&gt;
+    &lt;source src=&quot;video.ogv&quot; type=&quot;video/ogg&quot;&gt;
+&lt;/video&gt;
+</code></pre>
+
+<p>Exemplo: <a href="../html5/examples/01-video.html">01-video.html</a></p>
 <h2 id="audio">Áudio</h2>
+<pre><code class="html">&lt;audio src=&quot;audio.mp3&quot;&gt;
+    Seu navegador não suporta áudio HTML5
+&lt;/audio&gt;
+
+&lt;audio autoplay loop controls&gt;
+    &lt;source src=&quot;audio.mp3&quot; type=&quot;audio/mp3&quot;&gt;
+    &lt;source src=&quot;audio.ogg&quot; type=&quot;audio/ogg&quot;&gt;
+&lt;/audio&gt;
+</code></pre>
+
+<p>Exemplo: <a href="../html5/examples/02-audio.html">02-audio.html</a></p>
 <h2 id="formularios">Formulários</h2>
 <h3 id="novos-atributos">Novos atributos</h3>
+<pre><code class="html">&lt;form novalidate&gt;
+    &lt;input type=&quot;text&quot; placeholder=&quot;Seu e-mail&quot; required autofocus&gt;
+    &lt;input type=&quot;text&quot; placeholder=&quot;Estado&quot; pattern=&quot;[A-Z]{2}&quot;&gt;
+    &lt;input type=&quot;submit&quot;&gt;
+&lt;/form&gt;
+</code></pre>
+
+<p>Exemplo: <a href="../html5/examples/03-form-attributes.html">03-form-attributes.html</a></p>
 <h3 id="novos-tipos-de-campos">Novos tipos de campos</h3>
+<pre><code class="html">&lt;input type=&quot;email&quot;&gt;
+&lt;input type=&quot;url&quot;&gt;
+&lt;input type=&quot;number&quot;&gt;
+&lt;input type=&quot;range&quot;&gt;
+&lt;input type=&quot;search&quot;&gt;
+</code></pre>
+
+<p>Outros tipos ainda pouco suportados pelos navegadores: <code>color</code>, <code>date</code>, <code>datetime</code></p>
+<p>Exemplo: <a href="../html5/examples/04-input-types.html">04-input-types.html</a></p>
               
             </div>
           </div>
