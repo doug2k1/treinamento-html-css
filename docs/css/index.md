@@ -367,6 +367,10 @@ p {
 
 Exemplo: [07-position-float.html](/css/examples/07-position-float.html)
 
+## Background
+
+color, image, position, repeat, shorthand
+
 ## Exercício
 
 Estilizar o HTML do exercício anterior (pode modificar o HTML).
