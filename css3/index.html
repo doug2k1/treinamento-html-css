@@ -24,7 +24,7 @@
   <script>
     // Current page data
     var mkdocs_page_name = "CSS3";
-    var mkdocs_page_input_path = "css3/index.md";
+    var mkdocs_page_input_path = "css3\index.md";
     var mkdocs_page_url = "/css3/";
   </script>
   
@@ -92,8 +92,6 @@
                 
                     <li><a class="toctree-l4" href="#seletores">Seletores</a></li>
                 
-                    <li><a class="toctree-l4" href="#efeitos-visuais">Efeitos visuais</a></li>
-                
                     <li><a class="toctree-l4" href="#cantos-arrendondados">Cantos arrendondados</a></li>
                 
                     <li><a class="toctree-l4" href="#sombras">Sombras</a></li>
@@ -153,28 +151,129 @@
               
                 <h1 id="css3">CSS3</h1>
 <h2 id="seletores">Seletores</h2>
-<p>:nth-child(n)
-:last-child
-:empty
-:not(s)
-:enabled
-:disabled
-:checked</p>
-<h2 id="efeitos-visuais">Efeitos visuais</h2>
+<pre><code class="css">/* último filho */
+p:last-child { ... }
+/* enésimo filho */
+p:nth-child(2) { ... }
+/* elemento sem conteúdo */
+p:empty { ... }
+/* nega um seletor */
+p:not(.xpto) { ... }
+/* habilitado */
+input:enabled { ... }
+/* desabilitado */
+input:disabled { ... }
+/* checkbox/radio selecionado */
+input:checked { ... }
+</code></pre>
+
 <h2 id="cantos-arrendondados">Cantos arrendondados</h2>
-<p>border-radius</p>
+<pre><code class="css">div {
+    border-radius: 10px;
+    border-radius: 5px 6px 7px 8px; /* top-left, top-right, bottom-right, bottom-left */
+    border-radius: 10px 20px; /* top-left bottom-right, top-right bottom-left */
+}
+</code></pre>
+
 <h2 id="sombras">Sombras</h2>
-<p>box-shadow
-text-shadow</p>
+<pre><code class="css">div {
+    /* horizontal, vertical, blur, spread, cor */
+    box-shadow: 3px 3px 5px 10px rgba(255, 0, 0, 0.5);
+
+    /* sombra interna */
+    box-shadow: inset 3px 3px 5px 10px rgba(255, 0, 0, 0.5);
+
+    /* sombra em texto */
+    /* horizontal, vertical, blur, color */
+    text-shadow: 3px 3px 5px #000;
+
+    /* é possível ter multiplas sombra em um mesmo elemento */
+    text-shadow: 3px 3px 5px #000, 4px 4px 0 #ccc;
+}
+</code></pre>
+
 <h2 id="web-fonts">Web fonts</h2>
+<p>Melhor compatibilidade:</p>
+<pre><code class="css">@font-face {
+    font-family: 'MyWebFont';
+    src: url('webfont.eot'); /* IE9 Compat Modes */
+    src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+        url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+        url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+</code></pre>
+
+<p>Compatibilidade razoável (IE9, Safari 5.1, Android 4.4):</p>
+<pre><code class="css">@font-face {
+    font-family: 'MyWebFont';
+    src: url('myfont.woff2') format('woff2'),
+        url('myfont.woff') format('woff');
+}
+</code></pre>
+
+<p>Usando a fonte:</p>
+<pre><code class="css">body {
+    font-family: 'MyWebFont', Arial, sans-serif;
+}
+</code></pre>
+
+<p>Ferramenta para geração de webfonts: <a href="http://www.fontsquirrel.com/tools/webfont-generator">Font Squirrel</a></p>
+<h3 id="google-fonts">Google Fonts</h3>
+<p>https://www.google.com/fonts</p>
 <h2 id="transicoes">Transições</h2>
-<p>transition
-transition-property
-transition-duration
-transition-delay
-transition-timing-function</p>
+<pre><code class="css">div {
+    /* propriedade, duração, timming function, delay */
+    transition: background-color 0.5s ease 1s;
+
+    /* propriedades separadas */
+    transition-property: width;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in; /* ease, linear, ease-in, ease-out, ease-in-out, step-start, step-end */
+    transition-delay: 1s;
+}
+</code></pre>
+
+<p><strong>Unidades de tempo</strong>: segundos <code>2s</code> ou milisegundos <code>500ms</code></p>
+<p>Propriedades "transitáveis": <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties">MDN - CSS animated properties</a></p>
 <h2 id="transformacoes">Transformações</h2>
-<p>transform: scale, rotate</p>
+<pre><code class="css">div {
+    transform: [funções de transformação];
+    transform-origin: 50% 50%; /* número, porcentagem ou keywords (center top bottom left right) */
+}
+</code></pre>
+
+<h3 id="escala">Escala</h3>
+<pre><code class="css">div {
+    transform: scale(2); /* proporcionalmente */
+    transform: scale(2, 3); /* horizontal e vertical */
+    transform: scaleX(0.5) scaleY(3); /* horizontal e vertical separados */
+    transform: scaleX(-1); /* pode ser negativo: vai inverter o elemento */
+}
+</code></pre>
+
+<h3 id="skew">Skew</h3>
+<pre><code class="css">div {
+    transform: skewX(30deg); /* &quot;entorta&quot; para a direita ou esquerda */
+    transform: skewY(25deg); /* &quot;entorta&quot; para cima ou para baixo */
+}
+</code></pre>
+
+<p><strong>Unidade de ângulo</strong>: graus <code>45deg</code> (existem outras, mas graus é a mais fácil de trabalhar)</p>
+<h3 id="translacao">Translação</h3>
+<pre><code class="css">div {
+    transform: translate(10px 10px);
+    transform: translateX(10px) translateY(10px);
+}
+</code></pre>
+
+<h3 id="rotacao">Rotação</h3>
+<pre><code class="css">div {
+    transform: rotate(30deg); /* se negativo gira no sentido anti-horário */
+}
+</code></pre>
+
 <h2 id="animacao">Animação</h2>
               
             </div>

@@ -247,7 +247,7 @@
         }, 
         {
             "location": "/css3/", 
-            "text": "CSS3\n\n\nSeletores\n\n\n:nth-child(n)\n:last-child\n:empty\n:not(s)\n:enabled\n:disabled\n:checked\n\n\nEfeitos visuais\n\n\nCantos arrendondados\n\n\nborder-radius\n\n\nSombras\n\n\nbox-shadow\ntext-shadow\n\n\nWeb fonts\n\n\nTransi\u00e7\u00f5es\n\n\ntransition\ntransition-property\ntransition-duration\ntransition-delay\ntransition-timing-function\n\n\nTransforma\u00e7\u00f5es\n\n\ntransform: scale, rotate\n\n\nAnima\u00e7\u00e3o", 
+            "text": "CSS3\n\n\nSeletores\n\n\n/* \u00faltimo filho */\np:last-child { ... }\n/* en\u00e9simo filho */\np:nth-child(2) { ... }\n/* elemento sem conte\u00fado */\np:empty { ... }\n/* nega um seletor */\np:not(.xpto) { ... }\n/* habilitado */\ninput:enabled { ... }\n/* desabilitado */\ninput:disabled { ... }\n/* checkbox/radio selecionado */\ninput:checked { ... }\n\n\n\n\nCantos arrendondados\n\n\ndiv {\n    border-radius: 10px;\n    border-radius: 5px 6px 7px 8px; /* top-left, top-right, bottom-right, bottom-left */\n    border-radius: 10px 20px; /* top-left bottom-right, top-right bottom-left */\n}\n\n\n\n\nSombras\n\n\ndiv {\n    /* horizontal, vertical, blur, spread, cor */\n    box-shadow: 3px 3px 5px 10px rgba(255, 0, 0, 0.5);\n\n    /* sombra interna */\n    box-shadow: inset 3px 3px 5px 10px rgba(255, 0, 0, 0.5);\n\n    /* sombra em texto */\n    /* horizontal, vertical, blur, color */\n    text-shadow: 3px 3px 5px #000;\n\n    /* \u00e9 poss\u00edvel ter multiplas sombra em um mesmo elemento */\n    text-shadow: 3px 3px 5px #000, 4px 4px 0 #ccc;\n}\n\n\n\n\nWeb fonts\n\n\nMelhor compatibilidade:\n\n\n@font-face {\n    font-family: 'MyWebFont';\n    src: url('webfont.eot'); /* IE9 Compat Modes */\n    src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */\n        url('webfont.woff2') format('woff2'), /* Super Modern Browsers */\n        url('webfont.woff') format('woff'), /* Pretty Modern Browsers */\n        url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */\n        url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */\n}\n\n\n\n\nCompatibilidade razo\u00e1vel (IE9, Safari 5.1, Android 4.4):\n\n\n@font-face {\n    font-family: 'MyWebFont';\n    src: url('myfont.woff2') format('woff2'),\n        url('myfont.woff') format('woff');\n}\n\n\n\n\nUsando a fonte:\n\n\nbody {\n    font-family: 'MyWebFont', Arial, sans-serif;\n}\n\n\n\n\nFerramenta para gera\u00e7\u00e3o de webfonts: \nFont Squirrel\n\n\nGoogle Fonts\n\n\nhttps://www.google.com/fonts\n\n\nTransi\u00e7\u00f5es\n\n\ndiv {\n    /* propriedade, dura\u00e7\u00e3o, timming function, delay */\n    transition: background-color 0.5s ease 1s;\n\n    /* propriedades separadas */\n    transition-property: width;\n    transition-duration: 500ms;\n    transition-timing-function: ease-in; /* ease, linear, ease-in, ease-out, ease-in-out, step-start, step-end */\n    transition-delay: 1s;\n}\n\n\n\n\nUnidades de tempo\n: segundos \n2s\n ou milisegundos \n500ms\n\n\nPropriedades \"transit\u00e1veis\": \nMDN - CSS animated properties\n\n\nTransforma\u00e7\u00f5es\n\n\ndiv {\n    transform: [fun\u00e7\u00f5es de transforma\u00e7\u00e3o];\n    transform-origin: 50% 50%; /* n\u00famero, porcentagem ou keywords (center top bottom left right) */\n}\n\n\n\n\nEscala\n\n\ndiv {\n    transform: scale(2); /* proporcionalmente */\n    transform: scale(2, 3); /* horizontal e vertical */\n    transform: scaleX(0.5) scaleY(3); /* horizontal e vertical separados */\n    transform: scaleX(-1); /* pode ser negativo: vai inverter o elemento */\n}\n\n\n\n\nSkew\n\n\ndiv {\n    transform: skewX(30deg); /* \nentorta\n para a direita ou esquerda */\n    transform: skewY(25deg); /* \nentorta\n para cima ou para baixo */\n}\n\n\n\n\nUnidade de \u00e2ngulo\n: graus \n45deg\n (existem outras, mas graus \u00e9 a mais f\u00e1cil de trabalhar)\n\n\nTransla\u00e7\u00e3o\n\n\ndiv {\n    transform: translate(10px 10px);\n    transform: translateX(10px) translateY(10px);\n}\n\n\n\n\nRota\u00e7\u00e3o\n\n\ndiv {\n    transform: rotate(30deg); /* se negativo gira no sentido anti-hor\u00e1rio */\n}\n\n\n\n\nAnima\u00e7\u00e3o", 
             "title": "CSS3"
         }, 
         {
@@ -257,38 +257,58 @@
         }, 
         {
             "location": "/css3/#seletores", 
-            "text": ":nth-child(n)\n:last-child\n:empty\n:not(s)\n:enabled\n:disabled\n:checked", 
+            "text": "/* \u00faltimo filho */\np:last-child { ... }\n/* en\u00e9simo filho */\np:nth-child(2) { ... }\n/* elemento sem conte\u00fado */\np:empty { ... }\n/* nega um seletor */\np:not(.xpto) { ... }\n/* habilitado */\ninput:enabled { ... }\n/* desabilitado */\ninput:disabled { ... }\n/* checkbox/radio selecionado */\ninput:checked { ... }", 
             "title": "Seletores"
         }, 
         {
-            "location": "/css3/#efeitos-visuais", 
-            "text": "", 
-            "title": "Efeitos visuais"
-        }, 
-        {
             "location": "/css3/#cantos-arrendondados", 
-            "text": "border-radius", 
+            "text": "div {\n    border-radius: 10px;\n    border-radius: 5px 6px 7px 8px; /* top-left, top-right, bottom-right, bottom-left */\n    border-radius: 10px 20px; /* top-left bottom-right, top-right bottom-left */\n}", 
             "title": "Cantos arrendondados"
         }, 
         {
             "location": "/css3/#sombras", 
-            "text": "box-shadow\ntext-shadow", 
+            "text": "div {\n    /* horizontal, vertical, blur, spread, cor */\n    box-shadow: 3px 3px 5px 10px rgba(255, 0, 0, 0.5);\n\n    /* sombra interna */\n    box-shadow: inset 3px 3px 5px 10px rgba(255, 0, 0, 0.5);\n\n    /* sombra em texto */\n    /* horizontal, vertical, blur, color */\n    text-shadow: 3px 3px 5px #000;\n\n    /* \u00e9 poss\u00edvel ter multiplas sombra em um mesmo elemento */\n    text-shadow: 3px 3px 5px #000, 4px 4px 0 #ccc;\n}", 
             "title": "Sombras"
         }, 
         {
             "location": "/css3/#web-fonts", 
-            "text": "", 
+            "text": "Melhor compatibilidade:  @font-face {\n    font-family: 'MyWebFont';\n    src: url('webfont.eot'); /* IE9 Compat Modes */\n    src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */\n        url('webfont.woff2') format('woff2'), /* Super Modern Browsers */\n        url('webfont.woff') format('woff'), /* Pretty Modern Browsers */\n        url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */\n        url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */\n}  Compatibilidade razo\u00e1vel (IE9, Safari 5.1, Android 4.4):  @font-face {\n    font-family: 'MyWebFont';\n    src: url('myfont.woff2') format('woff2'),\n        url('myfont.woff') format('woff');\n}  Usando a fonte:  body {\n    font-family: 'MyWebFont', Arial, sans-serif;\n}  Ferramenta para gera\u00e7\u00e3o de webfonts:  Font Squirrel", 
             "title": "Web fonts"
         }, 
         {
+            "location": "/css3/#google-fonts", 
+            "text": "https://www.google.com/fonts", 
+            "title": "Google Fonts"
+        }, 
+        {
             "location": "/css3/#transicoes", 
-            "text": "transition\ntransition-property\ntransition-duration\ntransition-delay\ntransition-timing-function", 
+            "text": "div {\n    /* propriedade, dura\u00e7\u00e3o, timming function, delay */\n    transition: background-color 0.5s ease 1s;\n\n    /* propriedades separadas */\n    transition-property: width;\n    transition-duration: 500ms;\n    transition-timing-function: ease-in; /* ease, linear, ease-in, ease-out, ease-in-out, step-start, step-end */\n    transition-delay: 1s;\n}  Unidades de tempo : segundos  2s  ou milisegundos  500ms  Propriedades \"transit\u00e1veis\":  MDN - CSS animated properties", 
             "title": "Transi\u00e7\u00f5es"
         }, 
         {
             "location": "/css3/#transformacoes", 
-            "text": "transform: scale, rotate", 
+            "text": "div {\n    transform: [fun\u00e7\u00f5es de transforma\u00e7\u00e3o];\n    transform-origin: 50% 50%; /* n\u00famero, porcentagem ou keywords (center top bottom left right) */\n}", 
             "title": "Transforma\u00e7\u00f5es"
+        }, 
+        {
+            "location": "/css3/#escala", 
+            "text": "div {\n    transform: scale(2); /* proporcionalmente */\n    transform: scale(2, 3); /* horizontal e vertical */\n    transform: scaleX(0.5) scaleY(3); /* horizontal e vertical separados */\n    transform: scaleX(-1); /* pode ser negativo: vai inverter o elemento */\n}", 
+            "title": "Escala"
+        }, 
+        {
+            "location": "/css3/#skew", 
+            "text": "div {\n    transform: skewX(30deg); /*  entorta  para a direita ou esquerda */\n    transform: skewY(25deg); /*  entorta  para cima ou para baixo */\n}  Unidade de \u00e2ngulo : graus  45deg  (existem outras, mas graus \u00e9 a mais f\u00e1cil de trabalhar)", 
+            "title": "Skew"
+        }, 
+        {
+            "location": "/css3/#translacao", 
+            "text": "div {\n    transform: translate(10px 10px);\n    transform: translateX(10px) translateY(10px);\n}", 
+            "title": "Transla\u00e7\u00e3o"
+        }, 
+        {
+            "location": "/css3/#rotacao", 
+            "text": "div {\n    transform: rotate(30deg); /* se negativo gira no sentido anti-hor\u00e1rio */\n}", 
+            "title": "Rota\u00e7\u00e3o"
         }, 
         {
             "location": "/css3/#animacao", 
