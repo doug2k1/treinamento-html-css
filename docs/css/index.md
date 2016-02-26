@@ -257,7 +257,11 @@ Exemplo: [03-texts.html](/css/examples/03-texts.html)
 ```css
 div {
     width: 100px; /* largura */
+    min-width: 100px;
+    max-width: 200px;
     height: 100px; /* altura */
+    min-height: 100px;
+    max-height: 200px;
     padding: 10px; /* espaço entre as bordas e o conteúdo */
     border: 1px solid red; /* espessura, estilo e cor das bordas */
     margin: 5px; /* espaço do lado de fora das bordas - pode ser nagativo */
@@ -362,6 +366,12 @@ Exemplo: [06-visibility-opacity.html](/css/examples/06-visibility-opacity.html)
 p {
     position: absolute; /* static (padrão), absolute, relative, fixed */
     float: left; /* left, right, none (padrão) */
+
+    /* relative, fixed e absolute podem ser posicionados usando: */
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
 }
 ```
 
@@ -369,8 +379,20 @@ Exemplo: [07-position-float.html](/css/examples/07-position-float.html)
 
 ## Background
 
-color, image, position, repeat, shorthand
+```css
+div {
+    background-color: red; /* cor */
+    background-image: url(/img/imagem.jpg); /* imagem */
+    background-repeat: no-repeat; /* no-repeat, repeat, repeat-x, repeat-y */
+
+    background-position: 0 0;
+    /* vertical horizontal (números, porcentagem ou keywords: top center bottom left center right) */
+
+    background: red url(img.jpg) 0 0 no-repeat; /* versão curta */
+}
+```
+Exemplo: [08-background.html](/css/examples/08-background.html)
 
 ## Exercício
 
-Estilizar o HTML do exercício anterior (pode modificar o HTML).
+Estilizar o HTML do exercício anterior (pode modificar o HTML, adicionar classes, etc).

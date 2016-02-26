@@ -190,4 +190,5 @@ Classifica e identifica elementos. `id` deve ser único na página. `class` pode
 
 ## Exercício
 
-Estruturar o HTML a partir de um layout (sem CSS).
+Estruturar o HTML a partir do um layout (ainda sem usar CSS).  
+Arquivos: [html-css-project.zip](/project/html-css-project.zip)
