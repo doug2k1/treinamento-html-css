@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Backgrounds</title>
+    <style>
+        div {
+            width: 300px;
+            height: 100px;
+            float: left;
+            margin: 30px;
+            padding: 20px;
+        }
+        .color {
+            background-color: #fc0;
+        }
+        .rep {
+            color: #fc0;
+            background-color: #000;
+            background-image: url(../../project/final/img/logo.png);
+        }
+        .norep {
+            color: #fc0;
+            background: #000 url(../../project/final/img/logo.png) no-repeat bottom center;
+        }
+    </style>
+</head>
+<body>
+    <div class="color">
+        cor
+    </div>
+
+    <div class="rep">
+        imagem com repetição
+    </div>
+
+    <div class="norep">
+        imagem posicionada sem repetição
+    </div>
+</body>
+</html>

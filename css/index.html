@@ -365,7 +365,11 @@ p {
 <p><img alt="ilustração box model" src="../css/css_box_model.gif" title="" /></p>
 <pre><code class="css">div {
     width: 100px; /* largura */
+    min-width: 100px;
+    max-width: 200px;
     height: 100px; /* altura */
+    min-height: 100px;
+    max-height: 200px;
     padding: 10px; /* espaço entre as bordas e o conteúdo */
     border: 1px solid red; /* espessura, estilo e cor das bordas */
     margin: 5px; /* espaço do lado de fora das bordas - pode ser nagativo */
@@ -453,14 +457,32 @@ p {
 <pre><code class="css">p {
     position: absolute; /* static (padrão), absolute, relative, fixed */
     float: left; /* left, right, none (padrão) */
+
+    /* relative, fixed e absolute podem ser posicionados usando: */
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
 }
 </code></pre>
 
 <p>Exemplo: <a href="../css/examples/07-position-float.html">07-position-float.html</a></p>
 <h2 id="background">Background</h2>
-<p>color, image, position, repeat, shorthand</p>
+<pre><code class="css">div {
+    background-color: red; /* cor */
+    background-image: url(/img/imagem.jpg); /* imagem */
+    background-repeat: no-repeat; /* no-repeat, repeat, repeat-x, repeat-y */
+
+    background-position: 0 0;
+    /* vertical horizontal (números, porcentagem ou keywords: top center bottom left center right) */
+
+    background: red url(img.jpg) 0 0 no-repeat; /* versão curta */
+}
+</code></pre>
+
+<p>Exemplo: <a href="../css/examples/08-background.html">08-background.html</a></p>
 <h2 id="exercicio">Exercício</h2>
-<p>Estilizar o HTML do exercício anterior (pode modificar o HTML).</p>
+<p>Estilizar o HTML do exercício anterior (pode modificar o HTML, adicionar classes, etc).</p>
               
             </div>
           </div>
