@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 Shadows</title>
+    <style>
+        div {
+            background-color: #fc0;
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            float: left;
+        }
+        .simple {
+            box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.5);
+        }
+        .inset {
+            box-shadow: inset 0 0 10px #000;
+        }
+        .text {
+            font-size: 30px;
+            color: orange;
+            text-shadow: 1px 1px 2px #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="simple"></div>
+    <div class="inset"></div>
+
+    <p class="text">Texto com text-shadow</p>
+</body>
+</html>

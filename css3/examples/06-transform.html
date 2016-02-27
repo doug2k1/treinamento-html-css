@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 Transform</title>
+    <style>
+        div {
+            background-color: #fc0;
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            float: left;
+            transition: transform 500ms linear;
+        }
+        .scale:hover {
+            transform: scale(0.5, 1.5);
+        }
+        .skew:hover {
+            transform: skewX(45deg);
+        }
+        .skew2:hover {
+            transform: skewY(45deg);
+        }
+        .rotate2 {
+            transform-origin: top left;
+        }
+        .rotate:hover,
+        .rotate2:hover {
+            transform: rotate(45deg);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="scale">scale</div>
+    <div class="rotate">rotate</div>
+    <div class="rotate2">rotate2</div>
+    <div class="skew">skew</div>
+    <div class="skew2">skew2</div>
+</body>
+</html>
