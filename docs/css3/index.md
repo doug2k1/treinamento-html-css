@@ -11,13 +11,13 @@ p:nth-child(2) { ... }
 p:empty { ... }
 /* nega um seletor */
 p:not(.xpto) { ... }
-/* habilitado */
-input:enabled { ... }
 /* desabilitado */
 input:disabled { ... }
 /* checkbox/radio selecionado */
 input:checked { ... }
 ```
+
+Exemplo: [01-selectors.html](/css3/examples/01-selectors.html)
 
 ## Cantos arrendondados
 
@@ -28,6 +28,7 @@ div {
     border-radius: 10px 20px; /* top-left bottom-right, top-right bottom-left */
 }
 ```
+Exemplo: [02-border-radius.html](/css3/examples/02-border-radius.html)
 
 ## Sombras
 
@@ -47,6 +48,7 @@ div {
     text-shadow: 3px 3px 5px #000, 4px 4px 0 #ccc;
 }
 ```
+Exemplo: [03-shadows.html](/css3/examples/03-shadows.html)
 
 ## Web fonts
 
@@ -84,6 +86,8 @@ body {
 
 Ferramenta para geração de webfonts: [Font Squirrel](http://www.fontsquirrel.com/tools/webfont-generator)
 
+Exemplo: [04-webfonts.html](/css3/examples/04-webfonts.html)
+
 ### Google Fonts
 
 https://www.google.com/fonts
@@ -106,6 +110,8 @@ div {
 **Unidades de tempo**: segundos `2s` ou milisegundos `500ms`
 
 Propriedades "transitáveis": [MDN - CSS animated properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties)
+
+Exemplo: [05-transitions.html](/css3/examples/05-transitions.html)
 
 ## Transformações
 
@@ -154,5 +160,7 @@ div {
     transform: rotate(30deg); /* se negativo gira no sentido anti-horário */
 }
 ```
+
+Exemplo: [06-transform.html](/css3/examples/06-transform.html)
 
 ## Animação

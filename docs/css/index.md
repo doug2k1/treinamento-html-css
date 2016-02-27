@@ -140,6 +140,13 @@ li:first-child {
     color: red;
 }
 ```
+### Múltiplos seletores
+
+```css
+    p, div, a {
+        color: red;
+    }
+```
 
 Exemplo: [04-selectors.html](/css/examples/04-selectors.html)
 
