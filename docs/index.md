@@ -1,17 +1,9 @@
 # Treinamento HTML & CSS
 
-For full documentation visit [mkdocs.org](http://mkdocs.org).
+## Tópicos
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+* **HTML** - Básico de HTML: sintaxe, principais tags.
+* **CSS** - Básico de CSS: sintaxe, seletores, principais atributos.
+* **HTML5** - Adições do HTML5: Tag semânticas, áudio, vídeo, formulários.
+* **CSS3** - Adições do CSS3: Novos seletores, efeitos visuais, web fonts, animações.
+* **Design Responsivo** - [Em construção]
