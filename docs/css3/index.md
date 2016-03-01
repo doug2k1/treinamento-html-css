@@ -90,7 +90,7 @@ Exemplo: [04-webfonts.html](/css3/examples/04-webfonts.html)
 
 ### Google Fonts
 
-https://www.google.com/fonts
+[https://www.google.com/fonts](https://www.google.com/fonts)
 
 ## Transições
 
@@ -164,3 +164,30 @@ div {
 Exemplo: [06-transform.html](/css3/examples/06-transform.html)
 
 ## Animação
+
+```css
+div {
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+    animation-direction: normal; /* normal, reverse, alternate, alternate-reverse */
+    animation-iteration-count: infinite; /* número ou infinite */
+    animation-play-state: running; /* running, paused */
+}
+
+div {
+    animation: pulse 1s ease 1s normal infinite;
+}
+
+@keyframes pulse {
+    0% {
+        background-color: #fff;
+    }
+    100% {
+        background-color: #f00;
+    }
+}
+```
+
+Exemplo: [07-animation.html](/css3/examples/07-animation.html)

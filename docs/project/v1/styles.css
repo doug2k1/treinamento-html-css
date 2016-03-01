@@ -1,0 +1,186 @@
+/* box sizing */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    line-height: 1;
+    font-size: 14px;
+    color: #a8a8a8;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1100px;
+}
+#header {
+    background-color: rgb(0, 199, 252);
+    overflow: hidden;
+}
+.logo {
+    display: block;
+    float: left;
+    height: 55px;
+    padding-top: 4px;
+}
+#nav {
+    float: right;
+}
+#nav li {
+    float: left;
+    list-style: none;
+}
+#nav a {
+    border-bottom: 2px solid transparent;
+    color: #fff;
+    display: block;
+    font-weight: bold;
+    padding: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#nav a:hover {
+    border-bottom-color: #fff;
+}
+.banner {
+    background: #000 url("img/slider/bg1.jpg") no-repeat top center;
+    height: 800px;
+    overflow: hidden;
+}
+.banner h1 {
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 50px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.banner p {
+    line-height: 30px;
+}
+.overlay-box {
+    background-color: rgba(15,116,143,0.8);
+    color: #fff;
+    margin-top: 180px;
+    padding: 50px 50px 50px 10%;
+    width: 60%;
+}
+
+/* section */
+
+.section {
+    padding: 80px 0;
+}
+.section-title {
+    color: #000;
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 60px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.section-title span {
+    border-bottom: 1px solid #000;
+    display: inline-block;
+    padding: 0 20px 20px;
+}
+.section-description {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* forms */
+form {
+    margin: 0 auto;
+    width: 600px;
+}
+.form-control {
+    border: 1px solid #dbdbdb;
+    font-size: 14px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+textarea.form-control {
+    height: 200px;
+}
+.form-control:focus {
+    border-color: #00c7fc;
+    box-shadow: 0 0 4px #00c7fc;
+    outline: none;
+}
+.btn-group {
+    text-align: right;
+}
+.btn {
+    color: #fff;
+    border: none;
+    background-color: #00c7fc;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
+.btn:hover {
+    color: #000;
+}
+
+/* footer */
+
+#footer {
+    background-color: #000;
+    padding: 100px 0;
+    text-align: center;
+}
+#footer p {
+    font-size: 20px;
+    margin: 30px 0;
+    text-transform: uppercase;
+}
+
+/* icons */
+.icon {
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+}
+.icon-monitor {
+    background-image: url(img/icons/monitor.png);
+}
+.icon-cog {
+    background-image: url(img/icons/cog.png);
+}
+.icon-ruler {
+    background-image: url(img/icons/ruler.png);
+}
+.icon-camera {
+    background-image: url(img/icons/camera.png);
+}
+
+/* feature box */
+.feature-box {
+    float: left;
+    height: 160px;
+    padding: 0 50px 50px 100px;
+    width: 50%;
+}
+.feature-box .icon {
+    float: left;
+    margin-left: -75px;
+}
+.feature-box .title {
+    color: #00C7FC;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 50px;
+}
+.feature-box .description {
+    line-height: 1.5em;
+}
