@@ -90,13 +90,6 @@
 <li>
           
             <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../bootstrap/">Bootstrap</a>
-        
-    </li>
-<li>
-          
-            <li>
     <li class="toctree-l1 current">
         <a class="current" href="./">Design Responsivo</a>
         
@@ -112,6 +105,13 @@
                 
             
             </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../bootstrap/">Bootstrap</a>
         
     </li>
 <li>
@@ -149,15 +149,30 @@
             <div class="section">
               
                 <h1 id="design-responsivo">Design Responsivo</h1>
+<p>Design que se adapta a diferentes tamanhos de telas.</p>
+<p>Exemplos: <a href="http://mediaqueri.es/">http://mediaqueri.es/</a></p>
 <h2 id="layout-fluido">Layout fluido</h2>
-<p>Usar medidas em %</p>
+<p>Usar medidas em %.</p>
 <h2 id="meta-viewport">Meta viewport</h2>
-<p><meta name="viewport" content="width=device-width, initial-scale=1"></p>
+<pre><code class="html">    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+</code></pre>
+
 <h2 id="media-queries">Media queries</h2>
-<p>@media screen and (max-width: 800px) {</p>
-<p>}</p>
-<p>@media screen and (min-width: 300px) {</p>
-<p>}</p>
+<pre><code class="css">    @media screen and (max-width: 800px) {
+        #nav {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 300px) {
+        .mini-nav {
+            display: block;
+        }
+        .container {
+            width: 100%;
+        }
+    }
+</code></pre>
               
             </div>
           </div>
@@ -165,8 +180,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="../bootstrap/" class="btn btn-neutral float-right" title="Bootstrap">Next <span class="icon icon-circle-arrow-right"></span></a>
       
-        <a href="../bootstrap/" class="btn btn-neutral" title="Bootstrap"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+        <a href="../css3/" class="btn btn-neutral" title="CSS3"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -192,8 +209,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../bootstrap/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../css3/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
+      
+        <span style="margin-left: 15px"><a href="../bootstrap/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
