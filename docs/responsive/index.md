@@ -2,6 +2,8 @@
 
 Design que se adapta a diferentes tamanhos de telas.
 
+Exemplos: <http://mediaqueri.es/>
+
 ## Layout fluido
 
 Usar medidas em %.
