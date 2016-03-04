@@ -111,6 +111,8 @@
             
                 <li class="toctree-l3"><a href="#sass-handlebars">SASS / Handlebars</a></li>
                 
+                    <li><a class="toctree-l4" href="#sugestao-de-tarefas">Sugestão de tarefas</a></li>
+                
             
             </ul>
         
@@ -151,6 +153,35 @@
               
                 <h1 id="sass-handlebars">SASS / Handlebars</h1>
 <p><a href="./products-store.zip">products-store.zip</a></p>
+<p><a href="./products-store-v2.zip">products-store-v2.zip</a></p>
+<h2 id="sugestao-de-tarefas">Sugestão de tarefas</h2>
+<ul>
+<li>Alterar o tema (cores do layout) para não ficar com "cara de Bootstrap" - <a href="./new-layout.png">exemplo</a></li>
+<li>Novo Produto (botão, modal, formulário)</li>
+<li>Coluna ações (editar, remover)</li>
+<li>Tendência de vendas (high, medium, low)</li>
+<li>Dashboard (4 cards + 4 gráficos 2x2) - <a href="./cards.png">exemplo de cards</a></li>
+<li>Indicador de loading</li>
+</ul>
+<pre><code class="css">/* color pallete */
+$color-primary: #3F51B5;
+$color-primary-light: #C5CAE9;
+$color-primary-dark: #1A237E;
+$color-secondary: #607D8B;
+$color-secondary-light: #CFD8DC;
+$color-secondary-dark: #263238;
+
+/* Bootstrap */
+$icon-font-path: 'node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+$navbar-inverse-bg: $color-primary;
+$navbar-inverse-border: transparent;
+$navbar-inverse-color: $color-primary-light;
+$navbar-inverse-link-color: #fff;
+$label-primary-bg: $color-secondary-dark;
+
+$thumbnail-width: 50px;
+$thumbnail-height: $thumbnail-width;
+</code></pre>
               
             </div>
           </div>

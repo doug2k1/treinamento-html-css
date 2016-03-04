@@ -352,13 +352,18 @@
         }, 
         {
             "location": "/sass-handlebars/", 
-            "text": "SASS / Handlebars\n\n\nproducts-store.zip", 
+            "text": "SASS / Handlebars\n\n\nproducts-store.zip\n\n\nproducts-store-v2.zip\n\n\nSugest\u00e3o de tarefas\n\n\n\n\nAlterar o tema (cores do layout) para n\u00e3o ficar com \"cara de Bootstrap\" - \nexemplo\n\n\nNovo Produto (bot\u00e3o, modal, formul\u00e1rio)\n\n\nColuna a\u00e7\u00f5es (editar, remover)\n\n\nTend\u00eancia de vendas (high, medium, low)\n\n\nDashboard (4 cards + 4 gr\u00e1ficos 2x2) - \nexemplo de cards\n\n\nIndicador de loading\n\n\n\n\n/* color pallete */\n$color-primary: #3F51B5;\n$color-primary-light: #C5CAE9;\n$color-primary-dark: #1A237E;\n$color-secondary: #607D8B;\n$color-secondary-light: #CFD8DC;\n$color-secondary-dark: #263238;\n\n/* Bootstrap */\n$icon-font-path: 'node_modules/bootstrap-sass/assets/fonts/bootstrap/';\n$navbar-inverse-bg: $color-primary;\n$navbar-inverse-border: transparent;\n$navbar-inverse-color: $color-primary-light;\n$navbar-inverse-link-color: #fff;\n$label-primary-bg: $color-secondary-dark;\n\n$thumbnail-width: 50px;\n$thumbnail-height: $thumbnail-width;", 
             "title": "SASS/Handlebars"
         }, 
         {
             "location": "/sass-handlebars/#sass-handlebars", 
-            "text": "products-store.zip", 
+            "text": "products-store.zip  products-store-v2.zip", 
             "title": "SASS / Handlebars"
+        }, 
+        {
+            "location": "/sass-handlebars/#sugestao-de-tarefas", 
+            "text": "Alterar o tema (cores do layout) para n\u00e3o ficar com \"cara de Bootstrap\" -  exemplo  Novo Produto (bot\u00e3o, modal, formul\u00e1rio)  Coluna a\u00e7\u00f5es (editar, remover)  Tend\u00eancia de vendas (high, medium, low)  Dashboard (4 cards + 4 gr\u00e1ficos 2x2) -  exemplo de cards  Indicador de loading   /* color pallete */\n$color-primary: #3F51B5;\n$color-primary-light: #C5CAE9;\n$color-primary-dark: #1A237E;\n$color-secondary: #607D8B;\n$color-secondary-light: #CFD8DC;\n$color-secondary-dark: #263238;\n\n/* Bootstrap */\n$icon-font-path: 'node_modules/bootstrap-sass/assets/fonts/bootstrap/';\n$navbar-inverse-bg: $color-primary;\n$navbar-inverse-border: transparent;\n$navbar-inverse-color: $color-primary-light;\n$navbar-inverse-link-color: #fff;\n$label-primary-bg: $color-secondary-dark;\n\n$thumbnail-width: 50px;\n$thumbnail-height: $thumbnail-width;", 
+            "title": "Sugest\u00e3o de tarefas"
         }
     ]
 }
