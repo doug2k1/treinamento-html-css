@@ -11,3 +11,4 @@
 * **Bootstrap**
 * **SASS / Handlebars**
 * **JavaScript** - Básico de JavaScript
+* **JS no Browser** 

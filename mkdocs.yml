@@ -12,3 +12,4 @@ pages:
 - Bootstrap: bootstrap/index.md
 - SASS/Handlebars: sass-handlebars/index.md
 - JavaScript: js/index.md
+- JS no Browser: js-browser/index.md
