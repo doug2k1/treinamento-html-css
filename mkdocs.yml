@@ -3,6 +3,7 @@ theme: readthedocs
 extra_css: []
 pages:
 - Home: index.md
+- Frontend: frontend/index.md
 - HTML: html/index.md
 - CSS: css/index.md
 - HTML5: html5/index.md
@@ -10,3 +11,4 @@ pages:
 - Design Responsivo: responsive/index.md
 - Bootstrap: bootstrap/index.md
 - SASS/Handlebars: sass-handlebars/index.md
+- JavaScript: js/index.md
