@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Treinamento HTML \n CSS\n\n\nT\u00f3picos\n\n\n\n\nHTML\n - B\u00e1sico de HTML: sintaxe, principais tags.\n\n\nCSS\n - B\u00e1sico de CSS: sintaxe, seletores, principais atributos.\n\n\nHTML5\n - Adi\u00e7\u00f5es do HTML5: Tag sem\u00e2nticas, \u00e1udio, v\u00eddeo, formul\u00e1rios.\n\n\nCSS3\n - Adi\u00e7\u00f5es do CSS3: Novos seletores, efeitos visuais, web fonts, anima\u00e7\u00f5es.\n\n\nDesign Responsivo\n\n\nBootstrap\n\n\nSASS / Handlebars", 
+            "text": "Treinamento HTML \n CSS\n\n\nT\u00f3picos\n\n\n\n\nFrontend\n - Papel do frontend\n\n\nHTML\n - B\u00e1sico de HTML: sintaxe, principais tags.\n\n\nCSS\n - B\u00e1sico de CSS: sintaxe, seletores, principais atributos.\n\n\nHTML5\n - Adi\u00e7\u00f5es do HTML5: Tag sem\u00e2nticas, \u00e1udio, v\u00eddeo, formul\u00e1rios.\n\n\nCSS3\n - Adi\u00e7\u00f5es do CSS3: Novos seletores, efeitos visuais, web fonts, anima\u00e7\u00f5es.\n\n\nDesign Responsivo\n\n\nBootstrap\n\n\nSASS / Handlebars\n\n\nJavaScript\n - B\u00e1sico de JavaScript\n\n\nJS no Browser", 
             "title": "Home"
         }, 
         {
@@ -12,8 +12,18 @@
         }, 
         {
             "location": "/#topicos", 
-            "text": "HTML  - B\u00e1sico de HTML: sintaxe, principais tags.  CSS  - B\u00e1sico de CSS: sintaxe, seletores, principais atributos.  HTML5  - Adi\u00e7\u00f5es do HTML5: Tag sem\u00e2nticas, \u00e1udio, v\u00eddeo, formul\u00e1rios.  CSS3  - Adi\u00e7\u00f5es do CSS3: Novos seletores, efeitos visuais, web fonts, anima\u00e7\u00f5es.  Design Responsivo  Bootstrap  SASS / Handlebars", 
+            "text": "Frontend  - Papel do frontend  HTML  - B\u00e1sico de HTML: sintaxe, principais tags.  CSS  - B\u00e1sico de CSS: sintaxe, seletores, principais atributos.  HTML5  - Adi\u00e7\u00f5es do HTML5: Tag sem\u00e2nticas, \u00e1udio, v\u00eddeo, formul\u00e1rios.  CSS3  - Adi\u00e7\u00f5es do CSS3: Novos seletores, efeitos visuais, web fonts, anima\u00e7\u00f5es.  Design Responsivo  Bootstrap  SASS / Handlebars  JavaScript  - B\u00e1sico de JavaScript  JS no Browser", 
             "title": "T\u00f3picos"
+        }, 
+        {
+            "location": "/frontend/", 
+            "text": "Frontend", 
+            "title": "Frontend"
+        }, 
+        {
+            "location": "/frontend/#frontend", 
+            "text": "", 
+            "title": "Frontend"
         }, 
         {
             "location": "/html/", 
@@ -364,6 +374,111 @@
             "location": "/sass-handlebars/#sugestao-de-tarefas", 
             "text": "Alterar o tema (cores do layout) para n\u00e3o ficar com \"cara de Bootstrap\" -  exemplo  Novo Produto (bot\u00e3o, modal, formul\u00e1rio)  Coluna a\u00e7\u00f5es (editar, remover)  Tend\u00eancia de vendas (high, medium, low)  Dashboard (4 cards + 4 gr\u00e1ficos 2x2) -  exemplo de cards  Indicador de loading   /* color pallete */\n$color-primary: #3F51B5;\n$color-primary-light: #C5CAE9;\n$color-primary-dark: #1A237E;\n$color-secondary: #607D8B;\n$color-secondary-light: #CFD8DC;\n$color-secondary-dark: #263238;\n\n/* Bootstrap */\n$icon-font-path: 'node_modules/bootstrap-sass/assets/fonts/bootstrap/';\n$navbar-inverse-bg: $color-primary;\n$navbar-inverse-border: transparent;\n$navbar-inverse-color: $color-primary-light;\n$navbar-inverse-link-color: #fff;\n$label-primary-bg: $color-secondary-dark;\n\n$thumbnail-width: 50px;\n$thumbnail-height: $thumbnail-width;", 
             "title": "Sugest\u00e3o de tarefas"
+        }, 
+        {
+            "location": "/js/", 
+            "text": "JavaScript\n\n\nJavaScript \u00e9 uma linguagem interpretada, de tipagem din\u00e2mica, desenvolvida por Brendan Eich, na Netscape, em 1995. \nAtualmente est\u00e1 na vers\u00e3o 6/2015 (EcmaScript 6, ES6, ES2015), mas a maioria dos browsers tem suporte completo at\u00e9 o ES5.\n\n\nJS roda em browsers (client-side) ou no servidor (server-side) atrav\u00e9s do Node.js.\n\n\nExecutando JS no Dev Tools\n\n\nVoc\u00ea pode interagir com o JS de uma p\u00e1gina ou executar um JS qualquer na aba console do Dev Tools (F12).\n\n\nLogar informa\u00e7\u00f5es no console:\n\n\nconsole.log(info);\n\n\n\n\nIncluindo JS em uma p\u00e1gina web\n\n\n!-- inline --\n\n\nscript\n\n  // isto \u00e9 js\n  var hello = 'Hello';\n  console.log(hello)\n\n/script\n\n\n\n!-- externo --\n\n\nscript src=\nscript.js\n/script\n\n\n\n\n\nVari\u00e1veis, tipos de dados e operadores\n\n\nDeclara\u00e7\u00e3o de vari\u00e1vel\n\n\nvar x = 1, // inteiro\n    y = 2.75; // decimal (float)\nvar name = 'Fulano'; // string\nvar approved = true; // booleano\nvar rate = null; // nulo\nvar cpf; // undefined\n\n\n\n\nOperadores\n\n\nx = a + b; // soma n\u00fameros ou concatena strings: 'java' + 'script' =\n 'javascript'\nx = a - b;\nx = a * b;\nx = a / b;\nx = 10 % 3; // 1\n\nx += 1; // x = x + 1\nx -= 1;\nx *= 1;\nx /= 1;\nx %= 1;\n\na++; // incrementa\nb--; // decrementa\n\n\n\n\nArrays\n\n\nDeclara\u00e7\u00e3o\n\n\n// literal\nvar a = []; // declara array vazio\nvar b = [1, 2, 3]; // array com elementos\nvar c = [1, 'Nome', false]; // pode misturar tipos\n\n// classe Array\nvar d = new Array(); // array vazio\nvar e = new Array(3); // array com 3 elementos undefined\n\n\n\n\nManipula\u00e7\u00e3o\n\n\nvar c = [1, 'Nome', false];\n\n// acessar elemento\nvar d = c[0]; // 1\n\n// adicionar no final\nc.push(10); // [1, 'Nome', false, 10]\n// remover do final\nc.pop(); // 10\n// adicionar no in\u00edcio\nc.unshift(10); // [10, 1, 'Nome', false]\n// remover do in\u00edcio\nc.shift(); // 10\n\n\n\n\nPercorrer os elementos de um array (IE10+):\n\n\n// forEach\nvar a = [1, 2, 3];\nvar sum = 0;\n\na.forEach(function (element) {\n   sum += element; \n});\n\n// sum = 6\n\n\n\n\n// map\nvar a = [1, 2, 3];\n\nvar b = a.map(function (element) {\n   return element * 2; \n});\n// b = [2, 4, 6]\n\n\n\n\nMais info:\n\n\nhttps://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array\n\n\nFun\u00e7\u00f5es\n\n\nfunction add (a, b) {\n    return a + b;\n}\n\nvar x = add(3, 5);\n\n\n\n\nvar add = function (a, b) {\n    return a + b;\n};\n\nvar x = add(3, 5);\n\n\n\n\nObjetos\n\n\nvar product = {\n    name: 'Preisteixu',\n    price: 4000,\n    details: {\n        hd: 500,\n        bluray: true\n    },\n    publish: function () {\n        // function code\n    }\n};\n\nvar n = product.name;\nvar n2 = product['name'];\nvar hd = product.details.hd;\nvar hd2 = product['details']['hd'];\nproduct.publish();\n\nvar stringKeys = {\n    'person name': 'Jo\u00e3o',\n    'birth-city': 'Campinas'\n};\n\nvar n3 = stringKeys['person name'];\n\n\n\n\nEstruturas de controle\n\n\n// if, else\nif (product.active) {\n    product.publish();\n}\n\nif (paid) {\n    generateInvoice();\n} else {\n    cancelOrder();\n}\n\n\n\n\n// if tern\u00e1rio\nvar message = valid ? 'Ok' : 'Invalid';\n\n\n\n\n// switch\nswitch (level) {\n    case 'high':\n        receiveBonus();\n        break;\n    case 'medium':\n        normalPay();\n        break;\n    case 'low':\n        noPay();\n        break;\n    default:\n        error();\n        break;\n}\n\n\n\n\nEstruturas de repeti\u00e7\u00e3o\n\n\n// while\nwhile (pending) {\n    proccessOrder();\n}\n\n\n\n\n// for\nfor (var i = 0; i \n 10; i++) {\n    console.log(i);\n}\n\n\n\n\nOperadores booleanos\n\n\n1 == '1' // true: compara fazendo convers\u00e3o de tipo\n1 === '1' // false: deve ser do mesmo valor e mesmo tipo\na \n b // maior\na \n= b // maior ou igual\na \n b // menor\na \n= b // menor ou igual\na \n b // E: true se a E b s\u00e3o verdadeiros\na || b // OU: true se a OU b \u00e9 verdadeiro\n!a // inverte (true vira false, false vira true)\n\n// Ex:\nif (price \n 5000 \n client.hasNoDebts()) {\n    discount(0.1)\n}", 
+            "title": "JavaScript"
+        }, 
+        {
+            "location": "/js/#javascript", 
+            "text": "JavaScript \u00e9 uma linguagem interpretada, de tipagem din\u00e2mica, desenvolvida por Brendan Eich, na Netscape, em 1995. \nAtualmente est\u00e1 na vers\u00e3o 6/2015 (EcmaScript 6, ES6, ES2015), mas a maioria dos browsers tem suporte completo at\u00e9 o ES5.  JS roda em browsers (client-side) ou no servidor (server-side) atrav\u00e9s do Node.js.", 
+            "title": "JavaScript"
+        }, 
+        {
+            "location": "/js/#executando-js-no-dev-tools", 
+            "text": "Voc\u00ea pode interagir com o JS de uma p\u00e1gina ou executar um JS qualquer na aba console do Dev Tools (F12).  Logar informa\u00e7\u00f5es no console:  console.log(info);", 
+            "title": "Executando JS no Dev Tools"
+        }, 
+        {
+            "location": "/js/#incluindo-js-em-uma-pagina-web", 
+            "text": "!-- inline --  script \n  // isto \u00e9 js\n  var hello = 'Hello';\n  console.log(hello) /script  !-- externo --  script src= script.js /script", 
+            "title": "Incluindo JS em uma p\u00e1gina web"
+        }, 
+        {
+            "location": "/js/#variaveis-tipos-de-dados-e-operadores", 
+            "text": "", 
+            "title": "Vari\u00e1veis, tipos de dados e operadores"
+        }, 
+        {
+            "location": "/js/#declaracao-de-variavel", 
+            "text": "var x = 1, // inteiro\n    y = 2.75; // decimal (float)\nvar name = 'Fulano'; // string\nvar approved = true; // booleano\nvar rate = null; // nulo\nvar cpf; // undefined", 
+            "title": "Declara\u00e7\u00e3o de vari\u00e1vel"
+        }, 
+        {
+            "location": "/js/#operadores", 
+            "text": "x = a + b; // soma n\u00fameros ou concatena strings: 'java' + 'script' =  'javascript'\nx = a - b;\nx = a * b;\nx = a / b;\nx = 10 % 3; // 1\n\nx += 1; // x = x + 1\nx -= 1;\nx *= 1;\nx /= 1;\nx %= 1;\n\na++; // incrementa\nb--; // decrementa", 
+            "title": "Operadores"
+        }, 
+        {
+            "location": "/js/#arrays", 
+            "text": "", 
+            "title": "Arrays"
+        }, 
+        {
+            "location": "/js/#declaracao", 
+            "text": "// literal\nvar a = []; // declara array vazio\nvar b = [1, 2, 3]; // array com elementos\nvar c = [1, 'Nome', false]; // pode misturar tipos\n\n// classe Array\nvar d = new Array(); // array vazio\nvar e = new Array(3); // array com 3 elementos undefined", 
+            "title": "Declara\u00e7\u00e3o"
+        }, 
+        {
+            "location": "/js/#manipulacao", 
+            "text": "var c = [1, 'Nome', false];\n\n// acessar elemento\nvar d = c[0]; // 1\n\n// adicionar no final\nc.push(10); // [1, 'Nome', false, 10]\n// remover do final\nc.pop(); // 10\n// adicionar no in\u00edcio\nc.unshift(10); // [10, 1, 'Nome', false]\n// remover do in\u00edcio\nc.shift(); // 10  Percorrer os elementos de um array (IE10+):  // forEach\nvar a = [1, 2, 3];\nvar sum = 0;\n\na.forEach(function (element) {\n   sum += element; \n});\n\n// sum = 6  // map\nvar a = [1, 2, 3];\n\nvar b = a.map(function (element) {\n   return element * 2; \n});\n// b = [2, 4, 6]  Mais info:  https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array", 
+            "title": "Manipula\u00e7\u00e3o"
+        }, 
+        {
+            "location": "/js/#funcoes", 
+            "text": "function add (a, b) {\n    return a + b;\n}\n\nvar x = add(3, 5);  var add = function (a, b) {\n    return a + b;\n};\n\nvar x = add(3, 5);", 
+            "title": "Fun\u00e7\u00f5es"
+        }, 
+        {
+            "location": "/js/#objetos", 
+            "text": "var product = {\n    name: 'Preisteixu',\n    price: 4000,\n    details: {\n        hd: 500,\n        bluray: true\n    },\n    publish: function () {\n        // function code\n    }\n};\n\nvar n = product.name;\nvar n2 = product['name'];\nvar hd = product.details.hd;\nvar hd2 = product['details']['hd'];\nproduct.publish();\n\nvar stringKeys = {\n    'person name': 'Jo\u00e3o',\n    'birth-city': 'Campinas'\n};\n\nvar n3 = stringKeys['person name'];", 
+            "title": "Objetos"
+        }, 
+        {
+            "location": "/js/#estruturas-de-controle", 
+            "text": "// if, else\nif (product.active) {\n    product.publish();\n}\n\nif (paid) {\n    generateInvoice();\n} else {\n    cancelOrder();\n}  // if tern\u00e1rio\nvar message = valid ? 'Ok' : 'Invalid';  // switch\nswitch (level) {\n    case 'high':\n        receiveBonus();\n        break;\n    case 'medium':\n        normalPay();\n        break;\n    case 'low':\n        noPay();\n        break;\n    default:\n        error();\n        break;\n}", 
+            "title": "Estruturas de controle"
+        }, 
+        {
+            "location": "/js/#estruturas-de-repeticao", 
+            "text": "// while\nwhile (pending) {\n    proccessOrder();\n}  // for\nfor (var i = 0; i   10; i++) {\n    console.log(i);\n}", 
+            "title": "Estruturas de repeti\u00e7\u00e3o"
+        }, 
+        {
+            "location": "/js/#operadores-booleanos", 
+            "text": "1 == '1' // true: compara fazendo convers\u00e3o de tipo\n1 === '1' // false: deve ser do mesmo valor e mesmo tipo\na   b // maior\na  = b // maior ou igual\na   b // menor\na  = b // menor ou igual\na   b // E: true se a E b s\u00e3o verdadeiros\na || b // OU: true se a OU b \u00e9 verdadeiro\n!a // inverte (true vira false, false vira true)\n\n// Ex:\nif (price   5000   client.hasNoDebts()) {\n    discount(0.1)\n}", 
+            "title": "Operadores booleanos"
+        }, 
+        {
+            "location": "/js-browser/", 
+            "text": "JS no Browser\n\n\nO objeto window\n\n\n\u00c9 o objeto global que cont\u00e9m toda a API do JS, bem como as vari\u00e1veis do programa.\n\n\nA palavra \nwindow\n pode ser omitida. Ex:\n\n\nwindow.Math.PI;\nMath.PI;\n\nvar x = 'Meu valor';\nwindow.x; // 'Meu valor';\n\n\n\n\nDOM\n\n\nDocument Object Model\n: \u00e9 a representa\u00e7\u00e3o em JS do HTML da p\u00e1gina, em forma de \u00e1rvore.\n\n\nhtml\n  |- head\n    |- title\n  |- body\n    |- div.main\n    |- div.footer\n\n\n\n\nSelecionando e manipulando elementos\n\n\n// IE9+\nvar footerLinks = document.querySelectorAll('.footer a');\n\nfooterLinks.forEach(function (link) {\n    link.className = 'new-class';\n});\n\n\n\n\nCom jQuery:\n\n\nvar footerLinks = $('.footer a');\n\nfooterLinks.addClass('new-class');\n\n\n\n\nEventos\n\n\njQuery\nAjax\n\n\nES6", 
+            "title": "JS no Browser"
+        }, 
+        {
+            "location": "/js-browser/#js-no-browser", 
+            "text": "", 
+            "title": "JS no Browser"
+        }, 
+        {
+            "location": "/js-browser/#o-objeto-window", 
+            "text": "\u00c9 o objeto global que cont\u00e9m toda a API do JS, bem como as vari\u00e1veis do programa.  A palavra  window  pode ser omitida. Ex:  window.Math.PI;\nMath.PI;\n\nvar x = 'Meu valor';\nwindow.x; // 'Meu valor';", 
+            "title": "O objeto window"
+        }, 
+        {
+            "location": "/js-browser/#dom", 
+            "text": "Document Object Model : \u00e9 a representa\u00e7\u00e3o em JS do HTML da p\u00e1gina, em forma de \u00e1rvore.  html\n  |- head\n    |- title\n  |- body\n    |- div.main\n    |- div.footer", 
+            "title": "DOM"
+        }, 
+        {
+            "location": "/js-browser/#selecionando-e-manipulando-elementos", 
+            "text": "// IE9+\nvar footerLinks = document.querySelectorAll('.footer a');\n\nfooterLinks.forEach(function (link) {\n    link.className = 'new-class';\n});  Com jQuery:  var footerLinks = $('.footer a');\n\nfooterLinks.addClass('new-class');", 
+            "title": "Selecionando e manipulando elementos"
+        }, 
+        {
+            "location": "/js-browser/#eventos", 
+            "text": "jQuery\nAjax  ES6", 
+            "title": "Eventos"
         }
     ]
 }

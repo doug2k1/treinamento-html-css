@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>JavaScript - Treinamento HTML & CSS</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "JavaScript";
+    var mkdocs_page_input_path = "js/index.md";
+    var mkdocs_page_url = "/js/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Treinamento HTML & CSS</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../frontend/">Frontend</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../html/">HTML</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../css/">CSS</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../html5/">HTML5</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../css3/">CSS3</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../responsive/">Design Responsivo</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../bootstrap/">Bootstrap</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../sass-handlebars/">SASS/Handlebars</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">JavaScript</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#javascript">JavaScript</a></li>
+                
+                    <li><a class="toctree-l4" href="#executando-js-no-dev-tools">Executando JS no Dev Tools</a></li>
+                
+                    <li><a class="toctree-l4" href="#incluindo-js-em-uma-pagina-web">Incluindo JS em uma página web</a></li>
+                
+                    <li><a class="toctree-l4" href="#variaveis-tipos-de-dados-e-operadores">Variáveis, tipos de dados e operadores</a></li>
+                
+                    <li><a class="toctree-l4" href="#arrays">Arrays</a></li>
+                
+                    <li><a class="toctree-l4" href="#funcoes">Funções</a></li>
+                
+                    <li><a class="toctree-l4" href="#objetos">Objetos</a></li>
+                
+                    <li><a class="toctree-l4" href="#estruturas-de-controle">Estruturas de controle</a></li>
+                
+                    <li><a class="toctree-l4" href="#estruturas-de-repeticao">Estruturas de repetição</a></li>
+                
+                    <li><a class="toctree-l4" href="#operadores-booleanos">Operadores booleanos</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../js-browser/">JS no Browser</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Treinamento HTML & CSS</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>JavaScript</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="javascript">JavaScript</h1>
+<p>JavaScript é uma linguagem interpretada, de tipagem dinâmica, desenvolvida por Brendan Eich, na Netscape, em 1995. 
+Atualmente está na versão 6/2015 (EcmaScript 6, ES6, ES2015), mas a maioria dos browsers tem suporte completo até o ES5.</p>
+<p>JS roda em browsers (client-side) ou no servidor (server-side) através do Node.js.</p>
+<h2 id="executando-js-no-dev-tools">Executando JS no Dev Tools</h2>
+<p>Você pode interagir com o JS de uma página ou executar um JS qualquer na aba console do Dev Tools (F12).</p>
+<p>Logar informações no console:</p>
+<pre><code class="javascript">console.log(info);
+</code></pre>
+
+<h2 id="incluindo-js-em-uma-pagina-web">Incluindo JS em uma página web</h2>
+<pre><code class="html">&lt;!-- inline --&gt;
+&lt;script&gt;
+  // isto é js
+  var hello = 'Hello';
+  console.log(hello)
+&lt;/script&gt;
+
+&lt;!-- externo --&gt;
+&lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+
+<h2 id="variaveis-tipos-de-dados-e-operadores">Variáveis, tipos de dados e operadores</h2>
+<h3 id="declaracao-de-variavel">Declaração de variável</h3>
+<pre><code class="javascript">var x = 1, // inteiro
+    y = 2.75; // decimal (float)
+var name = 'Fulano'; // string
+var approved = true; // booleano
+var rate = null; // nulo
+var cpf; // undefined
+</code></pre>
+
+<h3 id="operadores">Operadores</h3>
+<pre><code class="javascript">x = a + b; // soma números ou concatena strings: 'java' + 'script' =&gt; 'javascript'
+x = a - b;
+x = a * b;
+x = a / b;
+x = 10 % 3; // 1
+
+x += 1; // x = x + 1
+x -= 1;
+x *= 1;
+x /= 1;
+x %= 1;
+
+a++; // incrementa
+b--; // decrementa
+</code></pre>
+
+<h2 id="arrays">Arrays</h2>
+<h3 id="declaracao">Declaração</h3>
+<pre><code class="javascript">// literal
+var a = []; // declara array vazio
+var b = [1, 2, 3]; // array com elementos
+var c = [1, 'Nome', false]; // pode misturar tipos
+
+// classe Array
+var d = new Array(); // array vazio
+var e = new Array(3); // array com 3 elementos undefined
+</code></pre>
+
+<h3 id="manipulacao">Manipulação</h3>
+<pre><code class="javascript">var c = [1, 'Nome', false];
+
+// acessar elemento
+var d = c[0]; // 1
+
+// adicionar no final
+c.push(10); // [1, 'Nome', false, 10]
+// remover do final
+c.pop(); // 10
+// adicionar no início
+c.unshift(10); // [10, 1, 'Nome', false]
+// remover do início
+c.shift(); // 10
+</code></pre>
+
+<p>Percorrer os elementos de um array (IE10+):</p>
+<pre><code class="javascript">// forEach
+var a = [1, 2, 3];
+var sum = 0;
+
+a.forEach(function (element) {
+   sum += element; 
+});
+
+// sum = 6
+</code></pre>
+
+<pre><code class="javascript">// map
+var a = [1, 2, 3];
+
+var b = a.map(function (element) {
+   return element * 2; 
+});
+// b = [2, 4, 6]
+</code></pre>
+
+<p>Mais info:<br />
+<a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array">https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array</a></p>
+<h2 id="funcoes">Funções</h2>
+<pre><code class="javascript">function add (a, b) {
+    return a + b;
+}
+
+var x = add(3, 5);
+</code></pre>
+
+<pre><code class="javascript">var add = function (a, b) {
+    return a + b;
+};
+
+var x = add(3, 5);
+</code></pre>
+
+<h2 id="objetos">Objetos</h2>
+<pre><code class="javascript">var product = {
+    name: 'Preisteixu',
+    price: 4000,
+    details: {
+        hd: 500,
+        bluray: true
+    },
+    publish: function () {
+        // function code
+    }
+};
+
+var n = product.name;
+var n2 = product['name'];
+var hd = product.details.hd;
+var hd2 = product['details']['hd'];
+product.publish();
+
+var stringKeys = {
+    'person name': 'João',
+    'birth-city': 'Campinas'
+};
+
+var n3 = stringKeys['person name'];
+</code></pre>
+
+<h2 id="estruturas-de-controle">Estruturas de controle</h2>
+<pre><code class="javascript">// if, else
+if (product.active) {
+    product.publish();
+}
+
+if (paid) {
+    generateInvoice();
+} else {
+    cancelOrder();
+}
+</code></pre>
+
+<pre><code class="javascript">// if ternário
+var message = valid ? 'Ok' : 'Invalid';
+</code></pre>
+
+<pre><code class="javascript">// switch
+switch (level) {
+    case 'high':
+        receiveBonus();
+        break;
+    case 'medium':
+        normalPay();
+        break;
+    case 'low':
+        noPay();
+        break;
+    default:
+        error();
+        break;
+}
+</code></pre>
+
+<h2 id="estruturas-de-repeticao">Estruturas de repetição</h2>
+<pre><code class="javascript">// while
+while (pending) {
+    proccessOrder();
+}
+</code></pre>
+
+<pre><code class="javascript">// for
+for (var i = 0; i &lt; 10; i++) {
+    console.log(i);
+}
+</code></pre>
+
+<h2 id="operadores-booleanos">Operadores booleanos</h2>
+<pre><code class="javascript">1 == '1' // true: compara fazendo conversão de tipo
+1 === '1' // false: deve ser do mesmo valor e mesmo tipo
+a &gt; b // maior
+a &gt;= b // maior ou igual
+a &lt; b // menor
+a &lt;= b // menor ou igual
+a &amp;&amp; b // E: true se a E b são verdadeiros
+a || b // OU: true se a OU b é verdadeiro
+!a // inverte (true vira false, false vira true)
+
+// Ex:
+if (price &gt; 5000 &amp;&amp; client.hasNoDebts()) {
+    discount(0.1)
+}
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../js-browser/" class="btn btn-neutral float-right" title="JS no Browser">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../sass-handlebars/" class="btn btn-neutral" title="SASS/Handlebars"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../sass-handlebars/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../js-browser/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../js/theme.js"></script>
+
+</body>
+</html>

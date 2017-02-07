@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Design Responsivo - Treinamento HTML & CSS</title>
+  <title>JS no Browser - Treinamento HTML & CSS</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,9 +17,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Design Responsivo";
-    var mkdocs_page_input_path = "responsive/index.md";
-    var mkdocs_page_url = "/responsive/";
+    var mkdocs_page_name = "JS no Browser";
+    var mkdocs_page_input_path = "js-browser/index.md";
+    var mkdocs_page_url = "/js-browser/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -89,21 +89,8 @@
 <li>
           
             <li>
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Design Responsivo</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#design-responsivo">Design Responsivo</a></li>
-                
-                    <li><a class="toctree-l4" href="#layout-fluido">Layout fluido</a></li>
-                
-                    <li><a class="toctree-l4" href="#meta-viewport">Meta viewport</a></li>
-                
-                    <li><a class="toctree-l4" href="#media-queries">Media queries</a></li>
-                
-            
-            </ul>
+    <li class="toctree-l1 ">
+        <a class="" href="../responsive/">Design Responsivo</a>
         
     </li>
 <li>
@@ -130,8 +117,23 @@
 <li>
           
             <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../js-browser/">JS no Browser</a>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">JS no Browser</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#js-no-browser">JS no Browser</a></li>
+                
+                    <li><a class="toctree-l4" href="#o-objeto-window">O objeto window</a></li>
+                
+                    <li><a class="toctree-l4" href="#dom">DOM</a></li>
+                
+                    <li><a class="toctree-l4" href="#selecionando-e-manipulando-elementos">Selecionando e manipulando elementos</a></li>
+                
+                    <li><a class="toctree-l4" href="#eventos">Eventos</a></li>
+                
+            
+            </ul>
         
     </li>
 <li>
@@ -158,7 +160,7 @@
     
       
     
-    <li>Design Responsivo</li>
+    <li>JS no Browser</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -168,31 +170,46 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="design-responsivo">Design Responsivo</h1>
-<p>Design que se adapta a diferentes tamanhos de telas.</p>
-<p>Exemplos: <a href="http://mediaqueri.es/">http://mediaqueri.es/</a></p>
-<h2 id="layout-fluido">Layout fluido</h2>
-<p>Usar medidas em %.</p>
-<h2 id="meta-viewport">Meta viewport</h2>
-<pre><code class="html">    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+                <h1 id="js-no-browser">JS no Browser</h1>
+<h2 id="o-objeto-window">O objeto window</h2>
+<p>É o objeto global que contém toda a API do JS, bem como as variáveis do programa.</p>
+<p>A palavra <code>window</code> pode ser omitida. Ex:</p>
+<pre><code class="javascript">window.Math.PI;
+Math.PI;
+
+var x = 'Meu valor';
+window.x; // 'Meu valor';
 </code></pre>
 
-<h2 id="media-queries">Media queries</h2>
-<pre><code class="css">    @media screen and (max-width: 800px) {
-        #nav {
-            display: none;
-        }
-    }
-
-    @media screen and (min-width: 300px) {
-        .mini-nav {
-            display: block;
-        }
-        .container {
-            width: 100%;
-        }
-    }
+<h2 id="dom">DOM</h2>
+<p><strong>Document Object Model</strong>: é a representação em JS do HTML da página, em forma de árvore.</p>
+<pre><code>html
+  |- head
+    |- title
+  |- body
+    |- div.main
+    |- div.footer
 </code></pre>
+
+<h2 id="selecionando-e-manipulando-elementos">Selecionando e manipulando elementos</h2>
+<pre><code class="javascript">// IE9+
+var footerLinks = document.querySelectorAll('.footer a');
+
+footerLinks.forEach(function (link) {
+    link.className = 'new-class';
+});
+</code></pre>
+
+<p>Com jQuery:</p>
+<pre><code class="javascript">var footerLinks = $('.footer a');
+
+footerLinks.addClass('new-class');
+</code></pre>
+
+<h2 id="eventos">Eventos</h2>
+<p>jQuery
+Ajax</p>
+<p>ES6</p>
               
             </div>
           </div>
@@ -200,10 +217,8 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../bootstrap/" class="btn btn-neutral float-right" title="Bootstrap">Next <span class="icon icon-circle-arrow-right"></span></a>
       
-      
-        <a href="../css3/" class="btn btn-neutral" title="CSS3"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../js/" class="btn btn-neutral" title="JavaScript"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -229,10 +244,8 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../css3/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../js/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
-      
-        <span style="margin-left: 15px"><a href="../bootstrap/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

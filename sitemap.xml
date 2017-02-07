@@ -3,64 +3,88 @@
 
     
     <url>
-     <loc>None/</loc>
-     <lastmod>2016-03-03</lastmod>
+     <loc>/</loc>
+     <lastmod>2017-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>None/html/</loc>
-     <lastmod>2016-03-03</lastmod>
+     <loc>/frontend/</loc>
+     <lastmod>2017-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>None/css/</loc>
-     <lastmod>2016-03-03</lastmod>
+     <loc>/html/</loc>
+     <lastmod>2017-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>None/html5/</loc>
-     <lastmod>2016-03-03</lastmod>
+     <loc>/css/</loc>
+     <lastmod>2017-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>None/css3/</loc>
-     <lastmod>2016-03-03</lastmod>
+     <loc>/html5/</loc>
+     <lastmod>2017-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>None/responsive/</loc>
-     <lastmod>2016-03-03</lastmod>
+     <loc>/css3/</loc>
+     <lastmod>2017-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>None/bootstrap/</loc>
-     <lastmod>2016-03-03</lastmod>
+     <loc>/responsive/</loc>
+     <lastmod>2017-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>None/sass-handlebars/</loc>
-     <lastmod>2016-03-03</lastmod>
+     <loc>/bootstrap/</loc>
+     <lastmod>2017-02-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/sass-handlebars/</loc>
+     <lastmod>2017-02-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/js/</loc>
+     <lastmod>2017-02-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/js-browser/</loc>
+     <lastmod>2017-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
