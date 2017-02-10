@@ -185,6 +185,7 @@
 
 <h2 id="jquery">jQuery</h2>
 <p>Biblioteca JS que oferece funções para busca e manipulação no DOM, tratamento de eventos, Ajax.</p>
+<p>As funções do jQuery ficam no objeto <code>$</code>.</p>
 <p><a href="http://www.jquery.com">http://www.jquery.com</a></p>
 <h2 id="selecionando-e-manipulando-elementos">Selecionando e manipulando elementos</h2>
 <pre><code class="javascript">// IE9+
@@ -203,6 +204,13 @@ footerLinks.forEach(function (link) {
 <pre><code class="javascript">var footerLinks = $('.footer a');
 
 footerLinks.addClass('new-class');
+</code></pre>
+
+<h3 id="jquery-document-ready">jQuery: Document Ready</h3>
+<pre><code class="javascript">$(function () {
+    // Esta função vai ser executada quando o HTML da página estiver todo carregado.
+    // Toda seleção e manipulação no DOM deve ser feita aqui.
+});
 </code></pre>
 
 <h2 id="eventos">Eventos</h2>
@@ -231,6 +239,7 @@ mouseenter, mouseleave, click
 </code></pre>
 
 <h3 id="exercicios">Exercícios</h3>
+<p>Baixar arquivo: <a href="./exercicio-js.zip">exercicio-js.zip</a></p>
 <ol>
 <li>Validar campo de e-mail (no change verifica o valor, se estiver errado, adiciona uma classe)</li>
 <li>Limitador de caracteres em textarea (mostrar contador)</li>
@@ -269,6 +278,11 @@ request.send();
         // error
     });
 </code></pre>
+
+<h3 id="exercicios_1">Exercícios</h3>
+<ol>
+<li>Carregar informações do usuário através da API <a href="https://randomuser.me/">https://randomuser.me/</a></li>
+</ol>
               
             </div>
           </div>
