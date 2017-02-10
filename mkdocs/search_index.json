@@ -452,7 +452,7 @@
         }, 
         {
             "location": "/js-browser/", 
-            "text": "JS no Browser\n\n\nO objeto window\n\n\n\u00c9 o objeto global que cont\u00e9m toda a API do JS, bem como as vari\u00e1veis do programa.\n\n\nA palavra \nwindow\n pode ser omitida. Ex:\n\n\nwindow.Math.PI;\nMath.PI;\n\nvar x = 'Meu valor';\nwindow.x; // 'Meu valor';\n\n\n\n\nDOM\n\n\nDocument Object Model\n: \u00e9 a representa\u00e7\u00e3o em JS do HTML da p\u00e1gina, em forma de \u00e1rvore.\n\n\nhtml\n  |- head\n    |- title\n  |- body\n    |- div.main\n    |- div.footer\n\n\n\n\nSelecionando e manipulando elementos\n\n\n// IE9+\nvar footerLinks = document.querySelectorAll('.footer a');\n\nfooterLinks.forEach(function (link) {\n    link.className = 'new-class';\n});\n\n\n\n\nCom jQuery:\n\n\nvar footerLinks = $('.footer a');\n\nfooterLinks.addClass('new-class');\n\n\n\n\nEventos\n\n\njQuery\nAjax\n\n\nES6", 
+            "text": "JS no Browser\n\n\nDOM\n\n\nDocument Object Model\n: \u00e9 a representa\u00e7\u00e3o em JS do HTML da p\u00e1gina, em forma de \u00e1rvore.\n\n\nhtml\n  |- head\n    |- title\n  |- body\n    |- div.main\n    |- div.footer\n\n\n\n\njQuery\n\n\nBiblioteca JS que oferece fun\u00e7\u00f5es para busca e manipula\u00e7\u00e3o no DOM, tratamento de eventos, Ajax.\n\n\nhttp://www.jquery.com\n\n\nSelecionando e manipulando elementos\n\n\n// IE9+\n// retorna o primeiro elemento\nvar title = document.querySelector('h1');\n\n// retorna todos os elementos encontrados\nvar footerLinks = document.querySelectorAll('.footer a');\n\nfooterLinks.forEach(function (link) {\n    link.className = 'new-class';\n});\n\n\n\n\nCom jQuery:\n\n\nvar footerLinks = $('.footer a');\n\nfooterLinks.addClass('new-class');\n\n\n\n\nEventos\n\n\nEm JS voc\u00ea pode executar alguma a\u00e7\u00e3o quando algo acontece na p\u00e1gina, geralmente resultado da a\u00e7\u00e3o do usu\u00e1rio.\n\n\nvar logo = document.querySelector('#logo');\n\nlogo.addEventListener('click', function (event) {\n    // tratamento do evento aqui\n});\n\n\n\n\nCom jQuery:\n\n\nvar logo = $('#logo');\n\nlogo.on('click', function (event) {\n    // tratamento do evento aqui\n});\n\n\n\n\nAlguns eventos que podem ser tratados:\n\n\nfocus, blur, change, \nsubmit, \nresize, scroll, \nkeydown, keyup, \nmouseenter, mouseleave, click\n\n\n\n\nExerc\u00edcios\n\n\n\n\nValidar campo de e-mail (no change verifica o valor, se estiver errado, adiciona uma classe)\n\n\nLimitador de caracteres em textarea (mostrar contador)\n\n\nAbas (exibir conte\u00fado correspondente ao clicar na aba)\n\n\n\n\nAjax\n\n\nAsynchronous JavaScript And XML. C\u00f3digo JS que faz uma requisi\u00e7\u00e3o ass\u00edncrona ao servidor, \ne trata o retorno desta requisi\u00e7\u00e3o, sem ocasionar um recarregamento da p\u00e1gina.\n\n\nvar request = new XMLHttpRequest();\nrequest.open('GET', '/my/url', true);\n\nrequest.onload = function() {\n  if (request.status \n= 200 \n request.status \n 400) {\n    // Success!\n    var resp = request.responseText;\n  } else {\n    // We reached our target server, but it returned an error\n\n  }\n};\n\nrequest.onerror = function() {\n  // There was a connection error of some sort\n};\n\nrequest.send();\n\n\n\n\nCom jQuery:\n\n\n$.get('/my/url')\n    .done(function () {\n        // Success!\n        var resp = request.responseText;\n    })\n    .fail(function () {\n        // error\n    });", 
             "title": "JS no Browser"
         }, 
         {
@@ -461,24 +461,34 @@
             "title": "JS no Browser"
         }, 
         {
-            "location": "/js-browser/#o-objeto-window", 
-            "text": "\u00c9 o objeto global que cont\u00e9m toda a API do JS, bem como as vari\u00e1veis do programa.  A palavra  window  pode ser omitida. Ex:  window.Math.PI;\nMath.PI;\n\nvar x = 'Meu valor';\nwindow.x; // 'Meu valor';", 
-            "title": "O objeto window"
-        }, 
-        {
             "location": "/js-browser/#dom", 
             "text": "Document Object Model : \u00e9 a representa\u00e7\u00e3o em JS do HTML da p\u00e1gina, em forma de \u00e1rvore.  html\n  |- head\n    |- title\n  |- body\n    |- div.main\n    |- div.footer", 
             "title": "DOM"
         }, 
         {
+            "location": "/js-browser/#jquery", 
+            "text": "Biblioteca JS que oferece fun\u00e7\u00f5es para busca e manipula\u00e7\u00e3o no DOM, tratamento de eventos, Ajax.  http://www.jquery.com", 
+            "title": "jQuery"
+        }, 
+        {
             "location": "/js-browser/#selecionando-e-manipulando-elementos", 
-            "text": "// IE9+\nvar footerLinks = document.querySelectorAll('.footer a');\n\nfooterLinks.forEach(function (link) {\n    link.className = 'new-class';\n});  Com jQuery:  var footerLinks = $('.footer a');\n\nfooterLinks.addClass('new-class');", 
+            "text": "// IE9+\n// retorna o primeiro elemento\nvar title = document.querySelector('h1');\n\n// retorna todos os elementos encontrados\nvar footerLinks = document.querySelectorAll('.footer a');\n\nfooterLinks.forEach(function (link) {\n    link.className = 'new-class';\n});  Com jQuery:  var footerLinks = $('.footer a');\n\nfooterLinks.addClass('new-class');", 
             "title": "Selecionando e manipulando elementos"
         }, 
         {
             "location": "/js-browser/#eventos", 
-            "text": "jQuery\nAjax  ES6", 
+            "text": "Em JS voc\u00ea pode executar alguma a\u00e7\u00e3o quando algo acontece na p\u00e1gina, geralmente resultado da a\u00e7\u00e3o do usu\u00e1rio.  var logo = document.querySelector('#logo');\n\nlogo.addEventListener('click', function (event) {\n    // tratamento do evento aqui\n});  Com jQuery:  var logo = $('#logo');\n\nlogo.on('click', function (event) {\n    // tratamento do evento aqui\n});  Alguns eventos que podem ser tratados:  focus, blur, change, \nsubmit, \nresize, scroll, \nkeydown, keyup, \nmouseenter, mouseleave, click", 
             "title": "Eventos"
+        }, 
+        {
+            "location": "/js-browser/#exercicios", 
+            "text": "Validar campo de e-mail (no change verifica o valor, se estiver errado, adiciona uma classe)  Limitador de caracteres em textarea (mostrar contador)  Abas (exibir conte\u00fado correspondente ao clicar na aba)", 
+            "title": "Exerc\u00edcios"
+        }, 
+        {
+            "location": "/js-browser/#ajax", 
+            "text": "Asynchronous JavaScript And XML. C\u00f3digo JS que faz uma requisi\u00e7\u00e3o ass\u00edncrona ao servidor, \ne trata o retorno desta requisi\u00e7\u00e3o, sem ocasionar um recarregamento da p\u00e1gina.  var request = new XMLHttpRequest();\nrequest.open('GET', '/my/url', true);\n\nrequest.onload = function() {\n  if (request.status  = 200   request.status   400) {\n    // Success!\n    var resp = request.responseText;\n  } else {\n    // We reached our target server, but it returned an error\n\n  }\n};\n\nrequest.onerror = function() {\n  // There was a connection error of some sort\n};\n\nrequest.send();  Com jQuery:  $.get('/my/url')\n    .done(function () {\n        // Success!\n        var resp = request.responseText;\n    })\n    .fail(function () {\n        // error\n    });", 
+            "title": "Ajax"
         }
     ]
 }

@@ -124,13 +124,15 @@
             
                 <li class="toctree-l3"><a href="#js-no-browser">JS no Browser</a></li>
                 
-                    <li><a class="toctree-l4" href="#o-objeto-window">O objeto window</a></li>
-                
                     <li><a class="toctree-l4" href="#dom">DOM</a></li>
+                
+                    <li><a class="toctree-l4" href="#jquery">jQuery</a></li>
                 
                     <li><a class="toctree-l4" href="#selecionando-e-manipulando-elementos">Selecionando e manipulando elementos</a></li>
                 
                     <li><a class="toctree-l4" href="#eventos">Eventos</a></li>
+                
+                    <li><a class="toctree-l4" href="#ajax">Ajax</a></li>
                 
             
             </ul>
@@ -171,16 +173,6 @@
             <div class="section">
               
                 <h1 id="js-no-browser">JS no Browser</h1>
-<h2 id="o-objeto-window">O objeto window</h2>
-<p>É o objeto global que contém toda a API do JS, bem como as variáveis do programa.</p>
-<p>A palavra <code>window</code> pode ser omitida. Ex:</p>
-<pre><code class="javascript">window.Math.PI;
-Math.PI;
-
-var x = 'Meu valor';
-window.x; // 'Meu valor';
-</code></pre>
-
 <h2 id="dom">DOM</h2>
 <p><strong>Document Object Model</strong>: é a representação em JS do HTML da página, em forma de árvore.</p>
 <pre><code>html
@@ -191,8 +183,15 @@ window.x; // 'Meu valor';
     |- div.footer
 </code></pre>
 
+<h2 id="jquery">jQuery</h2>
+<p>Biblioteca JS que oferece funções para busca e manipulação no DOM, tratamento de eventos, Ajax.</p>
+<p><a href="http://www.jquery.com">http://www.jquery.com</a></p>
 <h2 id="selecionando-e-manipulando-elementos">Selecionando e manipulando elementos</h2>
 <pre><code class="javascript">// IE9+
+// retorna o primeiro elemento
+var title = document.querySelector('h1');
+
+// retorna todos os elementos encontrados
 var footerLinks = document.querySelectorAll('.footer a');
 
 footerLinks.forEach(function (link) {
@@ -207,9 +206,69 @@ footerLinks.addClass('new-class');
 </code></pre>
 
 <h2 id="eventos">Eventos</h2>
-<p>jQuery
-Ajax</p>
-<p>ES6</p>
+<p>Em JS você pode executar alguma ação quando algo acontece na página, geralmente resultado da ação do usuário.</p>
+<pre><code class="javascript">var logo = document.querySelector('#logo');
+
+logo.addEventListener('click', function (event) {
+    // tratamento do evento aqui
+});
+</code></pre>
+
+<p>Com jQuery:</p>
+<pre><code class="javascript">var logo = $('#logo');
+
+logo.on('click', function (event) {
+    // tratamento do evento aqui
+});
+</code></pre>
+
+<p>Alguns eventos que podem ser tratados:</p>
+<pre><code class="javascript">focus, blur, change, 
+submit, 
+resize, scroll, 
+keydown, keyup, 
+mouseenter, mouseleave, click
+</code></pre>
+
+<h3 id="exercicios">Exercícios</h3>
+<ol>
+<li>Validar campo de e-mail (no change verifica o valor, se estiver errado, adiciona uma classe)</li>
+<li>Limitador de caracteres em textarea (mostrar contador)</li>
+<li>Abas (exibir conteúdo correspondente ao clicar na aba)</li>
+</ol>
+<h2 id="ajax">Ajax</h2>
+<p>Asynchronous JavaScript And XML. Código JS que faz uma requisição assíncrona ao servidor, 
+e trata o retorno desta requisição, sem ocasionar um recarregamento da página.</p>
+<pre><code class="javascript">var request = new XMLHttpRequest();
+request.open('GET', '/my/url', true);
+
+request.onload = function() {
+  if (request.status &gt;= 200 &amp;&amp; request.status &lt; 400) {
+    // Success!
+    var resp = request.responseText;
+  } else {
+    // We reached our target server, but it returned an error
+
+  }
+};
+
+request.onerror = function() {
+  // There was a connection error of some sort
+};
+
+request.send();
+</code></pre>
+
+<p>Com jQuery:</p>
+<pre><code class="javascript">$.get('/my/url')
+    .done(function () {
+        // Success!
+        var resp = request.responseText;
+    })
+    .fail(function () {
+        // error
+    });
+</code></pre>
               
             </div>
           </div>
