@@ -17,6 +17,8 @@ html
 
 Biblioteca JS que oferece funções para busca e manipulação no DOM, tratamento de eventos, Ajax.
 
+As funções do jQuery ficam no objeto `$`.
+
 <http://www.jquery.com>
 
 ## Selecionando e manipulando elementos
@@ -40,6 +42,15 @@ Com jQuery:
 var footerLinks = $('.footer a');
   
 footerLinks.addClass('new-class');
+```
+
+### jQuery: Document Ready
+
+```javascript
+$(function () {
+    // Esta função vai ser executada quando o HTML da página estiver todo carregado.
+    // Toda seleção e manipulação no DOM deve ser feita aqui.
+});
 ```
 
 ## Eventos
@@ -75,6 +86,9 @@ mouseenter, mouseleave, click
 ```
 
 ### Exercícios
+
+Baixar arquivo: [exercicio-js.zip](exercicio-js.zip)
+
 
 1. Validar campo de e-mail (no change verifica o valor, se estiver errado, adiciona uma classe)
 2. Limitador de caracteres em textarea (mostrar contador)
@@ -119,3 +133,7 @@ $.get('/my/url')
         // error
     });
 ```
+
+### Exercícios
+
+1. Carregar informações do usuário através da API <https://randomuser.me/>
